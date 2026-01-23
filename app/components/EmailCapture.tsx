@@ -10,6 +10,13 @@ export default function EmailCapture() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate that a signup type is selected
+    if (!signupType) {
+      alert('Please select whether this is for yourself or as a gift.');
+      return;
+    }
+    
     setLoading(true);
 
     try {
@@ -70,30 +77,50 @@ export default function EmailCapture() {
           </div>
 
           <div className="space-y-4">
-            <p className="text-sm font-medium text-[#4a3728]/70 uppercase tracking-wide">I'm interested for:</p>
+            <p className="text-sm font-medium text-[#4a3728]/70 uppercase tracking-wide">I'm interested for: <span className="text-[#dd7409]">*</span></p>
             
-            <label className="flex items-center space-x-4 cursor-pointer group p-4 rounded-xl hover:bg-[#fef9ed]/50 transition-colors">
+            <label className={`flex items-center space-x-4 cursor-pointer group p-4 rounded-xl transition-all border-2 ${
+              signupType === 'self' 
+                ? 'bg-[#dd7409]/5 border-[#dd7409]' 
+                : 'hover:bg-[#fef9ed]/50 border-transparent'
+            }`}>
               <input
-                type="checkbox"
+                type="radio"
+                name="signupType"
                 checked={signupType === 'self'}
-                onChange={(e) => setSignupType(e.target.checked ? 'self' : null)}
-                className="w-6 h-6 rounded-lg border-2 border-[#8b6f47]/30 text-[#fdbf14] focus:ring-[#fcbe11] cursor-pointer"
+                onChange={() => setSignupType('self')}
+                className="w-6 h-6 text-[#dd7409] focus:ring-[#dd7409] cursor-pointer"
               />
-              <span className="text-lg text-[#4a3728] group-hover:text-[#1a1511] transition-colors font-medium">
-                Myself
-              </span>
+              <div className="flex-1">
+                <span className="text-lg text-[#4a3728] group-hover:text-[#1a1511] transition-colors font-medium block">
+                  🤰 Myself
+                </span>
+                <span className="text-sm text-[#4a3728]/60">
+                  I'm preparing for my own postpartum journey
+                </span>
+              </div>
             </label>
 
-            <label className="flex items-center space-x-4 cursor-pointer group p-4 rounded-xl hover:bg-[#fef9ed]/50 transition-colors">
+            <label className={`flex items-center space-x-4 cursor-pointer group p-4 rounded-xl transition-all border-2 ${
+              signupType === 'gift' 
+                ? 'bg-[#dd7409]/5 border-[#dd7409]' 
+                : 'hover:bg-[#fef9ed]/50 border-transparent'
+            }`}>
               <input
-                type="checkbox"
+                type="radio"
+                name="signupType"
                 checked={signupType === 'gift'}
-                onChange={(e) => setSignupType(e.target.checked ? 'gift' : null)}
-                className="w-6 h-6 rounded-lg border-2 border-[#8b6f47]/30 text-[#fdbf14] focus:ring-[#fcbe11] cursor-pointer"
+                onChange={() => setSignupType('gift')}
+                className="w-6 h-6 text-[#dd7409] focus:ring-[#dd7409] cursor-pointer"
               />
-              <span className="text-lg text-[#4a3728] group-hover:text-[#1a1511] transition-colors font-medium">
-                To gift to someone
-              </span>
+              <div className="flex-1">
+                <span className="text-lg text-[#4a3728] group-hover:text-[#1a1511] transition-colors font-medium block">
+                  🎁 To gift to someone
+                </span>
+                <span className="text-sm text-[#4a3728]/60">
+                  I want to support someone's recovery
+                </span>
+              </div>
             </label>
           </div>
 

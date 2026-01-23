@@ -58,39 +58,84 @@ export async function POST(request: Request) {
         `,
       });
 
-      // Optional: Welcome email to USER
+      // Optional: Welcome email to USER - PERSONALIZED based on signup type
+      const isForSelf = signupType === 'self';
+      const subjectLine = isForSelf 
+        ? "Welcome to Your Recovery Journey with Birth & Brodo 🤰" 
+        : "Thank You for This Thoughtful Gift! 🎁";
+      
+      const heroMessage = isForSelf
+        ? "Your Recovery Journey Starts Here"
+        : "What a Thoughtful Gift!";
+      
+      const mainMessage = isForSelf
+        ? "Thank you for prioritizing your postpartum recovery. We are building something special to support you during the fourth trimester, and we are honored you want to be part of it from the beginning."
+        : "Thank you for being such a thoughtful friend/partner/family member. Birth & Brodo is designed to support new mothers during their most vulnerable time, and your gift will make a real difference in someone's recovery journey.";
+      
+      const specificContent = isForSelf
+        ? `
+          <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 25px; border-left: 4px solid #dd7409;">
+            <h3 style="color: #dd7409; font-size: 20px; margin-bottom: 15px;">What to Expect for Your Recovery</h3>
+            <ul style="color: #4a3728; font-size: 16px; line-height: 1.8; margin: 0; padding-left: 20px;">
+              <li><strong>Nutrient-dense meals</strong> designed specifically for postpartum healing</li>
+              <li><strong>Zero effort required</strong> - delivered ready to eat when you need it most</li>
+              <li><strong>Warming, restorative foods</strong> to support your energy and recovery</li>
+              <li><strong>Founding member pricing</strong> as a thank you for believing in us early</li>
+            </ul>
+          </div>
+          <div style="background: #fef9ed; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+            <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin: 0;">
+              <strong>💡 Tip:</strong> We recommend ordering for your first week postpartum. You will be able to choose from packs like "The First 7 Days" and "C-Section Recovery Pack" when we launch.
+            </p>
+          </div>
+        `
+        : `
+          <div style="background: white; padding: 25px; border-radius: 10px; margin-bottom: 25px; border-left: 4px solid #dd7409;">
+            <h3 style="color: #dd7409; font-size: 20px; margin-bottom: 15px;">Why Birth & Brodo Makes the Perfect Gift</h3>
+            <ul style="color: #4a3728; font-size: 16px; line-height: 1.8; margin: 0; padding-left: 20px;">
+              <li><strong>Takes care of one major concern</strong> - what to eat during recovery</li>
+              <li><strong>More meaningful than flowers</strong> - practical support when it matters most</li>
+              <li><strong>Shows you truly understand</strong> the challenges of the fourth trimester</li>
+              <li><strong>Gift cards available</strong> so they can choose their preferred packs</li>
+            </ul>
+          </div>
+          <div style="background: #fef9ed; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+            <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin: 0;">
+              <strong>💝 Gift Tip:</strong> We recommend "The First 7 Days" pack as a baby shower gift, or our "Night Feed Support" pack for those late-night feeding sessions.
+            </p>
+          </div>
+        `;
+
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
         to: email,
-        subject: "You are on the Birth & Brodo Early Access List! 🎉",
+        subject: subjectLine,
         html: `
           <div style="font-family: 'Georgia', serif; padding: 20px; background-color: #fffbf5;">
             <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
               <div style="text-align: center; margin-bottom: 30px;">
-                <h1 style="color: #dd7409; font-size: 32px; margin-bottom: 10px;">Welcome to Birth & Brodo</h1>
-                <p style="color: #4a3728; font-size: 18px; margin: 0;">Nourishment for the fourth trimester</p>
+                <h1 style="color: #dd7409; font-size: 32px; margin-bottom: 10px;">${heroMessage}</h1>
+                <p style="color: #4a3728; font-size: 18px; margin: 0;">Birth & Brodo - Nourishment for the fourth trimester</p>
               </div>
               
-              <div style="background: linear-gradient(to bottom, #fef9ed, #fff8e7); padding: 30px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #dd7409;">
+              <div style="background: linear-gradient(to bottom, #fef9ed, #fff8e7); padding: 30px; border-radius: 10px; margin-bottom: 30px;">
                 <h2 style="color: #1a1511; font-size: 24px; margin-bottom: 15px;">You are on the list! ✨</h2>
-                <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
-                  Thank you for joining our early access list. We are building something special for the postpartum journey, and we are honored you want to be part of it.
-                </p>
                 <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin: 0;">
-                  ${signupType === 'self' 
-                    ? 'We will make sure you have everything you need for your recovery journey.' 
-                    : signupType === 'gift' 
-                    ? 'What a thoughtful gift! We will help you support someone during their postpartum journey.' 
-                    : 'We will keep you updated as we get closer to launch.'}
+                  ${mainMessage}
                 </p>
               </div>
+              
+              ${specificContent}
               
               <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; border: 2px solid #fef9ed;">
-                <h3 style="color: #dd7409; font-size: 20px; margin-bottom: 15px;">What is Next?</h3>
+                <h3 style="color: #dd7409; font-size: 20px; margin-bottom: 15px;">What Happens Next?</h3>
                 <ul style="color: #4a3728; font-size: 16px; line-height: 1.8; margin: 0; padding-left: 20px;">
-                  <li>We will send you updates as we get closer to launch</li>
-                  <li>You will get exclusive founding-member pricing</li>
-                  <li>You will be first to access our recovery packs</li>
+                  <li>We will send you launch updates as we get closer to Spring 2026</li>
+                  <li>You will get <strong>exclusive founding-member pricing</strong></li>
+                  <li>You will be <strong>first to access</strong> our recovery packs</li>
+                  ${isForSelf 
+                    ? '<li>We will share tips and resources for postpartum preparation</li>' 
+                    : '<li>We will send you gifting guides and recommendations</li>'}
                 </ul>
               </div>
               
