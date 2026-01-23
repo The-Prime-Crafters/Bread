@@ -539,7 +539,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="/WhatsApp Image 2026-01-21 at 13.00.01.jpeg"
+                  src="/logo.jpg"
                   alt="Birth & Brodo Logo"
                   fill
                   className="object-cover"

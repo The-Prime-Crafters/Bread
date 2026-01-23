@@ -17,8 +17,13 @@ export const metadata: Metadata = {
   title: "Birth & Brodo | Postpartum Nourishment for Recovery",
   description: "Nourishment for the fourth trimester. Recovery-focused meals designed for the earliest days postpartum — so healing can be the priority.",
   icons: {
-    icon: '/WhatsApp Image 2026-01-21 at 13.00.01.jpeg',
-    apple: '/WhatsApp Image 2026-01-21 at 13.00.01.jpeg',
+    icon: [
+      { url: '/logo.jpg' },
+      { url: '/logo.jpg', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/logo.jpg', sizes: '16x16', type: 'image/jpeg' },
+    ],
+    apple: '/logo.jpg',
+    shortcut: '/logo.jpg',
   },
 };
 

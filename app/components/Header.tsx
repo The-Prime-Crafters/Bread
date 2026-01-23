@@ -35,7 +35,7 @@ export default function Header() {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
             <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-md hover:scale-110 transition-transform duration-300">
               <Image
-                src="/WhatsApp Image 2026-01-21 at 13.00.01.jpeg"
+                src="/logo.jpg"
                 alt="Birth & Brodo Logo"
                 fill
                 className="object-cover"
