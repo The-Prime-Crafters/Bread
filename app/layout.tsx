@@ -16,6 +16,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Birth & Brodo | Postpartum Nourishment for Recovery",
   description: "Nourishment for the fourth trimester. Recovery-focused meals designed for the earliest days postpartum — so healing can be the priority.",
+  icons: {
+    icon: '/WhatsApp Image 2026-01-21 at 13.00.01.jpeg',
+    apple: '/WhatsApp Image 2026-01-21 at 13.00.01.jpeg',
+  },
 };
 
 export default function RootLayout({
