@@ -1,0 +1,14 @@
+# Don't ignore these - they're needed for deployment
+!app
+!lib
+!public
+!next.config.ts
+!package.json
+
+# Do ignore these
+.env.local
+node_modules
+.next
+*.md
+lib/setup-db.ts
+lib/test-db.ts
