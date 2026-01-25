@@ -44,7 +44,7 @@ export async function POST(request: Request) {
             <div style="max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
               <h2 style="color: #dd7409; margin-bottom: 20px;">New Early Access Signup! 🎉</h2>
               
-              <div style="background: #fef9ed; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+              <div style="background: #FEF3C7; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
                 <p style="margin: 10px 0;"><strong>Signup ID:</strong> #${signupId}</p>
                 <p style="margin: 10px 0;"><strong>Email:</strong> ${email}</p>
                 <p style="margin: 10px 0;"><strong>Signup Type:</strong> ${signupType === 'self' ? '🤰 For Myself' : signupType === 'gift' ? '🎁 To Gift' : '❓ Not specified'}</p>
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
               <li><strong>Founding member pricing</strong> as a thank you for believing in us early</li>
             </ul>
           </div>
-          <div style="background: #fef9ed; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+          <div style="background: #FEF3C7; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
             <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin: 0;">
               <strong>💡 Tip:</strong> We recommend ordering for your first week postpartum. You will be able to choose from packs like "The First 7 Days" and "C-Section Recovery Pack" when we launch.
             </p>
@@ -99,7 +99,7 @@ export async function POST(request: Request) {
               <li><strong>Gift cards available</strong> so they can choose their preferred packs</li>
             </ul>
           </div>
-          <div style="background: #fef9ed; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+          <div style="background: #FEF3C7; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
             <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin: 0;">
               <strong>💝 Gift Tip:</strong> We recommend "The First 7 Days" pack as a baby shower gift, or our "Night Feed Support" pack for those late-night feeding sessions.
             </p>
@@ -118,7 +118,7 @@ export async function POST(request: Request) {
                 <p style="color: #4a3728; font-size: 18px; margin: 0;">Birth & Brodo - Nourishment for the fourth trimester</p>
               </div>
               
-              <div style="background: linear-gradient(to bottom, #fef9ed, #fff8e7); padding: 30px; border-radius: 10px; margin-bottom: 30px;">
+              <div style="background: linear-gradient(to bottom, #FEF3C7, #FCD34D); padding: 30px; border-radius: 10px; margin-bottom: 30px;">
                 <h2 style="color: #1a1511; font-size: 24px; margin-bottom: 15px;">You are on the list! ✨</h2>
                 <p style="color: #4a3728; font-size: 16px; line-height: 1.6; margin: 0;">
                   ${mainMessage}
@@ -127,7 +127,7 @@ export async function POST(request: Request) {
               
               ${specificContent}
               
-              <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; border: 2px solid #fef9ed;">
+              <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; border: 2px solid #FEF3C7;">
                 <h3 style="color: #dd7409; font-size: 20px; margin-bottom: 15px;">What Happens Next?</h3>
                 <ul style="color: #4a3728; font-size: 16px; line-height: 1.8; margin: 0; padding-left: 20px;">
                   <li>We will send you launch updates as we get closer to Spring 2026</li>
@@ -139,7 +139,7 @@ export async function POST(request: Request) {
                 </ul>
               </div>
               
-              <div style="text-align: center; padding-top: 20px; border-top: 2px solid #fef9ed;">
+              <div style="text-align: center; padding-top: 20px; border-top: 2px solid #FEF3C7;">
                 <p style="color: #4a3728; font-size: 14px; margin-bottom: 10px;">
                   <strong>Launching Spring 2026</strong>
                 </p>

@@ -82,7 +82,7 @@ export default function EmailCapture() {
             <label className={`flex items-center space-x-4 cursor-pointer group p-4 rounded-xl transition-all border-2 ${
               signupType === 'self' 
                 ? 'bg-[#dd7409]/5 border-[#dd7409]' 
-                : 'hover:bg-[#fef9ed]/50 border-transparent'
+                : 'hover:bg-[#FEF3C7]/50 border-transparent'
             }`}>
               <input
                 type="radio"
@@ -104,7 +104,7 @@ export default function EmailCapture() {
             <label className={`flex items-center space-x-4 cursor-pointer group p-4 rounded-xl transition-all border-2 ${
               signupType === 'gift' 
                 ? 'bg-[#dd7409]/5 border-[#dd7409]' 
-                : 'hover:bg-[#fef9ed]/50 border-transparent'
+                : 'hover:bg-[#FEF3C7]/50 border-transparent'
             }`}>
               <input
                 type="radio"

@@ -91,7 +91,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden p-2 hover:bg-[#fef9ed] rounded-lg transition-colors" 
+            className="md:hidden p-2 hover:bg-[#FEF3C7] rounded-lg transition-colors" 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Menu"
           >
@@ -113,25 +113,25 @@ export default function Header() {
             <nav className="flex flex-col space-y-2">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#fef9ed] rounded-lg font-medium transition-colors"
+                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection('products')}
-                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#fef9ed] rounded-lg font-medium transition-colors"
+                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
               >
                 Products
               </button>
               <button
                 onClick={() => scrollToSection('how-it-works')}
-                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#fef9ed] rounded-lg font-medium transition-colors"
+                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
               >
                 How It Works
               </button>
               <button
                 onClick={() => scrollToSection('for-whom')}
-                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#fef9ed] rounded-lg font-medium transition-colors"
+                className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
               >
                 For Whom
               </button>

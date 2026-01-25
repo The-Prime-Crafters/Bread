@@ -4,21 +4,21 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FFF8F0]">
+    <div className="min-h-screen bg-[#FFFBEB]">
       <Header />
       
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FFF8F0]">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FFFBEB]">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1503431760783-91f2569f6802?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Peaceful mother in postpartum recovery"
+        <Image
+            src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop"
+            alt="Nourishing postpartum food - warm broth and vegetables"
             fill
             className="object-cover animate-scaleIn"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#FFF8F0]/85 via-[#FFF8F0]/80 to-[#FFF4E6]/85"></div>
+          priority
+        />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#FFFBEB]/85 via-[#FFFBEB]/80 to-[#FEF3C7]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto text-center px-4 md:px-6 py-32 md:py-40">
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       {/* What Makes This Different */}
-      <section className="section-padding bg-gradient-to-b from-[#fef9ed] to-white overflow-hidden">
+      <section className="section-padding bg-gradient-to-b from-[#FEF3C7] to-white overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
             <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#1a1511]">
@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="section-padding bg-[#fef9ed] overflow-hidden">
+      <section id="how-it-works" className="section-padding bg-[#FEF3C7] overflow-hidden">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#1a1511] animate-fadeInUp opacity-0">
             How it works
@@ -437,7 +437,7 @@ export default function Home() {
       {/* Credibility */}
       <section className="section-padding bg-white overflow-hidden">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-[#fef9ed] to-[#fff8e7] rounded-3xl p-8 md:p-16 shadow-xl border-2 border-[#dd7409]/10 animate-scaleIn opacity-0 hover:shadow-2xl transition-all duration-500">
+          <div className="bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 rounded-3xl p-8 md:p-16 shadow-xl border-2 border-[#dd7409]/10 animate-scaleIn opacity-0 hover:shadow-2xl transition-all duration-500">
             <div className="text-center">
               <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8 rounded-full bg-white shadow-lg flex items-center justify-center animate-float">
                 <svg className="w-10 h-10 md:w-12 md:h-12 text-[#dd7409]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -511,7 +511,7 @@ export default function Home() {
       </section>
 
       {/* Soft Close */}
-      <section className="py-20 bg-[#fef9ed]">
+      <section className="py-20 bg-[#FEF3C7]">
         <div className="max-w-4xl mx-auto text-center px-6 animate-fadeIn opacity-0">
           <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#dd7409]/10">
             <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#dd7409]/10 flex items-center justify-center">
@@ -527,8 +527,8 @@ export default function Home() {
             </p>
             <p className="text-[#4a3728]/60">
               No spam. No pressure. Just updates on our progress.
-            </p>
-          </div>
+          </p>
+        </div>
         </div>
       </section>
 
@@ -538,7 +538,7 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden shadow-lg">
-                <Image
+            <Image
                   src="/logo.jpg"
                   alt="Birth&Brodo Logo"
                   fill
