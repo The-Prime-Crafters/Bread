@@ -46,14 +46,14 @@ export default function EmailCapture() {
   if (submitted) {
     return (
       <div className="max-w-2xl mx-auto text-center">
-        <div className="bg-white rounded-3xl p-12 shadow-xl border-2 border-[#fcbe11]/20">
-          <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#dd7409] to-[#c66508] flex items-center justify-center shadow-lg animate-float">
+        <div className="bg-gradient-to-br from-[#FEF3C7] to-white rounded-3xl p-12 shadow-xl border-2 border-[#dd7409]/30">
+          <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg animate-float">
             <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="text-3xl font-serif font-semibold mb-3 text-[#1a1511]">You're on the list!</h3>
-          <p className="text-lg text-[#4a3728]/70">
+          <h3 className="text-3xl font-serif font-semibold mb-3 text-[#dd7409]">You're on the list!</h3>
+          <p className="text-lg text-[#2C2418]/70">
             We'll be in touch soon with launch updates and early access details.
           </p>
         </div>

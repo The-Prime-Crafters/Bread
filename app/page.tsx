@@ -68,10 +68,10 @@ export default function Home() {
       </section>
 
       {/* The Problem Section with Image */}
-      <section id="about" className="section-padding bg-white overflow-hidden">
+      <section id="about" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl animate-fadeInLeft opacity-0">
+            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl animate-fadeInLeft opacity-0 border-4 border-[#FCD34D]/30">
               <Image
                 src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?q=80&w=2070&auto=format&fit=crop"
                 alt="Mother resting with newborn baby"
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
             
             <div className="animate-fadeInRight opacity-0 animate-delay-300 px-4 md:px-0">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#2C2418] leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#dd7409] leading-tight">
                 The postpartum period is physically demanding
               </h2>
               
@@ -102,56 +102,56 @@ export default function Home() {
       </section>
 
       {/* What Makes This Different */}
-      <section className="section-padding bg-gradient-to-b from-[#FEF3C7] to-white overflow-hidden">
+      <section className="section-padding bg-gradient-to-b from-[#FFFBEB] via-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
-            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#1a1511]">
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
               Designed for recovery — not trends.
             </h2>
-            <p className="text-lg text-[#4a3728]/70 max-w-2xl mx-auto">
+            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
               Every meal is intentionally crafted to support your body's healing journey.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-[#fcbe11]/10 animate-fadeInUp opacity-0 animate-delay-200 hover:-translate-y-2 group">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#fcbe11]/20 to-[#fdbf14]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-10 h-10 text-[#fdbf14]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gradient-to-br from-white to-[#FEF3C7]/30 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-200 hover:-translate-y-2 group">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#1a1511] text-center">
+              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
                 Recovery-Focused
               </h3>
-              <p className="text-[#4a3728]/70 leading-relaxed text-center">
+              <p className="text-[#2C2418]/70 leading-relaxed text-center">
                 Meals designed to support energy, warmth, and restoration during your healing journey.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-[#fcbe11]/10 animate-fadeInUp opacity-0 animate-delay-400 hover:-translate-y-2 group">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#fcbe11]/20 to-[#fdbf14]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-10 h-10 text-[#fdbf14]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gradient-to-br from-white to-[#FEF3C7]/30 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-400 hover:-translate-y-2 group">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#1a1511] text-center">
+              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
                 Purpose-Built
               </h3>
-              <p className="text-[#4a3728]/70 leading-relaxed text-center">
+              <p className="text-[#2C2418]/70 leading-relaxed text-center">
                 Created specifically for the postpartum window — not general wellness or fleeting trends.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-[#fcbe11]/10 animate-fadeInUp opacity-0 animate-delay-600 hover:-translate-y-2 group">
-              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#fcbe11]/20 to-[#fdbf14]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-10 h-10 text-[#fdbf14]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gradient-to-br from-white to-[#FEF3C7]/30 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-600 hover:-translate-y-2 group">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#1a1511] text-center">
+              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
                 Handled
               </h3>
-              <p className="text-[#4a3728]/70 leading-relaxed text-center">
+              <p className="text-[#2C2418]/70 leading-relaxed text-center">
                 Delivered ready to eat, so nourishment requires zero effort when you need it most.
               </p>
             </div>
@@ -160,13 +160,13 @@ export default function Home() {
       </section>
 
       {/* Product Showcase */}
-      <section id="products" className="section-padding bg-white overflow-hidden">
+      <section id="products" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
-            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#1a1511]">
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
               Thoughtfully curated recovery packs
             </h2>
-            <p className="text-lg text-[#4a3728]/70 max-w-2xl mx-auto">
+            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
               Each pack is designed for specific postpartum needs, from the first week to C-section recovery.
             </p>
           </div>
@@ -244,26 +244,26 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="section-padding bg-[#FEF3C7] overflow-hidden">
+      <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#1a1511] animate-fadeInUp opacity-0">
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             How it works
           </h2>
 
           <div className="space-y-8">
-            <div className="flex flex-col md:flex-row gap-8 items-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-200 hover:-translate-x-2">
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#c66508] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
+            <div className="flex flex-col md:flex-row gap-8 items-center bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-200 hover:-translate-x-2 border-2 border-[#FCD34D]/30">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
                 1
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-serif font-semibold mb-2 text-[#1a1511]">
+                <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
                   Choose a recovery pack
                 </h3>
-                <p className="text-lg text-[#4a3728]/70 leading-relaxed">
+                <p className="text-lg text-[#2C2418]/70 leading-relaxed">
                   Select from our curated meal packages designed for your specific postpartum needs and recovery timeline.
                 </p>
               </div>
-              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
                 <Image
                   src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop"
                   alt="Mother choosing meal options"
@@ -273,19 +273,19 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 animate-fadeInRight opacity-0 animate-delay-400 hover:translate-x-2">
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#c66508] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
+            <div className="flex flex-col md:flex-row gap-8 items-center bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInRight opacity-0 animate-delay-400 hover:translate-x-2 border-2 border-[#FCD34D]/30">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
                 2
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-serif font-semibold mb-2 text-[#1a1511]">
+                <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
                   We prepare and deliver
                 </h3>
-                <p className="text-lg text-[#4a3728]/70 leading-relaxed">
+                <p className="text-lg text-[#2C2418]/70 leading-relaxed">
                   Fresh, warming meals prepared with care and delivered right to your door at the perfect time.
                 </p>
               </div>
-              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
                 <Image
                   src="https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGRlbGl2ZXJ5fGVufDB8fDB8fHww"
                   alt="Delivery to your door"
@@ -295,19 +295,19 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-600 hover:-translate-x-2">
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#c66508] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
+            <div className="flex flex-col md:flex-row gap-8 items-center bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-600 hover:-translate-x-2 border-2 border-[#FCD34D]/30">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
                 3
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-serif font-semibold mb-2 text-[#1a1511]">
+                <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
                   You focus on healing
                 </h3>
-                <p className="text-lg text-[#4a3728]/70 leading-relaxed">
+                <p className="text-lg text-[#2C2418]/70 leading-relaxed">
                   No planning. No cooking. No decisions. Just nourishment when you need it most.
                 </p>
               </div>
-              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
                 <Image
                   src="https://images.unsplash.com/photo-1686668108595-3c2171a8fc78?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Mother bonding with baby"
@@ -321,12 +321,12 @@ export default function Home() {
       </section>
 
       {/* Who This Is For */}
-      <section id="for-whom" className="section-padding bg-white overflow-hidden">
+      <section id="for-whom" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/30 overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#1a1511] animate-fadeInUp opacity-0">
-            Who Birth & Brodo is for
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#dd7409] animate-fadeInUp opacity-0">
+            Who Birth&Brodo is for
           </h2>
-          <p className="text-lg text-[#4a3728]/70 text-center mb-16 max-w-2xl mx-auto animate-fadeInUp opacity-0 animate-delay-200">
+          <p className="text-lg text-[#2C2418]/70 text-center mb-16 max-w-2xl mx-auto animate-fadeInUp opacity-0 animate-delay-200">
             Supporting you through every stage of your postpartum journey
           </p>
 
@@ -435,24 +435,24 @@ export default function Home() {
       </section>
 
       {/* Credibility */}
-      <section className="section-padding bg-white overflow-hidden">
+      <section className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 rounded-3xl p-8 md:p-16 shadow-xl border-2 border-[#dd7409]/10 animate-scaleIn opacity-0 hover:shadow-2xl transition-all duration-500">
+          <div className="bg-gradient-to-br from-[#FCD34D]/40 to-[#fcbe11]/20 rounded-3xl p-8 md:p-16 shadow-xl border-4 border-[#dd7409]/20 animate-scaleIn opacity-0 hover:shadow-2xl transition-all duration-500">
             <div className="text-center">
-              <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8 rounded-full bg-white shadow-lg flex items-center justify-center animate-float">
-                <svg className="w-10 h-10 md:w-12 md:h-12 text-[#dd7409]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] shadow-lg flex items-center justify-center animate-float">
+                <svg className="w-10 h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-semibold mb-6 md:mb-8 text-[#1a1511] leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-semibold mb-6 md:mb-8 text-[#dd7409] leading-tight">
                 Thoughtfully designed
               </h2>
               
-              <p className="text-lg md:text-2xl text-[#4a3728] leading-relaxed mb-4 md:mb-6 font-medium px-2">
-                Birth & Brodo is being built by people with experience in postpartum care, nutrition, and food operations.
+              <p className="text-lg md:text-2xl text-[#2C2418] leading-relaxed mb-4 md:mb-6 font-medium px-2">
+                Birth&Brodo is being built by people with experience in postpartum care, nutrition, and food operations.
               </p>
               
-              <p className="text-base md:text-xl text-[#4a3728]/70 leading-relaxed px-2">
+              <p className="text-base md:text-xl text-[#2C2418]/70 leading-relaxed px-2">
                 We're starting small — intentionally — to get this right.
               </p>
             </div>
@@ -511,24 +511,24 @@ export default function Home() {
       </section>
 
       {/* Soft Close */}
-      <section className="py-20 bg-[#FEF3C7]">
+      <section className="py-20 bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/40">
         <div className="max-w-4xl mx-auto text-center px-6 animate-fadeIn opacity-0">
-          <div className="bg-white rounded-3xl p-12 shadow-lg border border-[#dd7409]/10">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-[#dd7409]/10 flex items-center justify-center">
-              <svg className="w-8 h-8 text-[#dd7409]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-white rounded-3xl p-12 shadow-xl border-2 border-[#dd7409]/20">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="text-2xl font-serif font-semibold mb-4 text-[#1a1511]">
+            <h3 className="text-2xl font-serif font-semibold mb-4 text-[#dd7409]">
               Launching Spring 2026
             </h3>
-            <p className="text-lg text-[#4a3728]/80 leading-relaxed mb-2">
+            <p className="text-lg text-[#2C2418]/80 leading-relaxed mb-2">
               We're currently capturing early interest and preparing for a thoughtful launch.
             </p>
-            <p className="text-[#4a3728]/60">
+            <p className="text-[#2C2418]/60">
               No spam. No pressure. Just updates on our progress.
-          </p>
-        </div>
+            </p>
+          </div>
         </div>
       </section>
 
