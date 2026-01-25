@@ -4,52 +4,52 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fffbf5]">
+    <div className="min-h-screen bg-[#FFF8F0]">
       <Header />
       
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FFF8F0]">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-        <Image
+          <Image
             src="https://images.unsplash.com/photo-1503431760783-91f2569f6802?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Peaceful mother in postpartum recovery"
             fill
             className="object-cover animate-scaleIn"
-          priority
-        />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#fffbf5]/70 via-[#fffbf5]/60 to-[#fef9ed]/75"></div>
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#FFF8F0]/85 via-[#FFF8F0]/80 to-[#FFF4E6]/85"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto text-center px-6 py-32">
-          <div className="inline-block mb-6 px-6 py-2 bg-[#fcbe11]/10 backdrop-blur-sm rounded-full border border-[#fcbe11]/20 animate-slideInFromTop opacity-0">
-            <p className="text-sm font-medium text-[#4a3728]">Nourishment for the fourth trimester</p>
+        <div className="relative z-10 max-w-6xl mx-auto text-center px-4 md:px-6 py-32 md:py-40">
+          <div className="inline-block mb-8 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-[#dd7409]/20 shadow-sm animate-slideInFromTop opacity-0">
+            <p className="text-sm font-medium text-[#2C2418]">Postpartum meal delivery</p>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-serif font-semibold mb-8 text-[#1a1511] leading-tight animate-fadeInUp opacity-0 animate-delay-200">
-            Postpartum recovery,<br />handled.
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 md:mb-8 text-[#2C2418] leading-tight animate-fadeInUp opacity-0 animate-delay-200 max-w-5xl mx-auto">
+            Nourish your recovery,<br className="hidden sm:block" /> one meal at a time
           </h1>
           
-          <p className="text-xl md:text-2xl mb-12 text-[#4a3728]/90 max-w-3xl mx-auto leading-relaxed animate-fadeInUp opacity-0 animate-delay-400">
-            Birth & Brodo delivers recovery-focused meals designed for the earliest days postpartum — so healing can be the priority.
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 md:mb-12 text-[#2C2418]/80 max-w-3xl mx-auto leading-relaxed animate-fadeInUp opacity-0 animate-delay-400 px-4">
+            Nutrient-dense meals delivered during the fourth trimester. Ready to eat. Designed for healing.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp opacity-0 animate-delay-600">
             <a
               href="#join"
-              className="group inline-flex items-center gap-2 bg-[#dd7409] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[#c66508] transition-all transform hover:scale-[1.05] hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+              className="group inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-[1.02] hover:-translate-y-1 shadow-lg hover:shadow-2xl w-full sm:w-auto justify-center"
             >
-              <span>Join the Early Access List</span>
-              <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span>Get Early Access</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
           </div>
-          <p className="mt-6 text-sm text-[#4a3728]/60 flex items-center justify-center gap-2 animate-fadeIn opacity-0 animate-delay-800">
+          <p className="mt-6 text-sm text-[#2C2418]/60 flex items-center justify-center gap-2 animate-fadeIn opacity-0 animate-delay-800">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
             </svg>
-            Launching Spring 2026 • Limited early access
+            Launching Spring 2026
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
           aria-label="Scroll to content"
         >
           <div className="animate-bounce">
-            <svg className="w-6 h-6 text-[#4a3728]/40 hover:text-[#dd7409] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-[#2C2418]/40 hover:text-[#dd7409] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
           </div>
@@ -69,9 +69,9 @@ export default function Home() {
 
       {/* The Problem Section with Image */}
       <section id="about" className="section-padding bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl animate-fadeInLeft opacity-0">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl animate-fadeInLeft opacity-0">
               <Image
                 src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?q=80&w=2070&auto=format&fit=crop"
                 alt="Mother resting with newborn baby"
@@ -80,20 +80,20 @@ export default function Home() {
               />
             </div>
             
-            <div className="animate-fadeInRight opacity-0 animate-delay-300">
-              <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-6 text-[#1a1511]">
-                The days after birth are physically demanding.
+            <div className="animate-fadeInRight opacity-0 animate-delay-300 px-4 md:px-0">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#2C2418] leading-tight">
+                The postpartum period is physically demanding
               </h2>
               
-              <div className="space-y-6 text-lg text-[#4a3728]/80 leading-relaxed">
+              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-[#2C2418]/80 leading-relaxed">
                 <p className="animate-fadeInUp opacity-0 animate-delay-400">
-                  Food still needs to happen — even when sleep is fragmented, recovery is ongoing, and decisions feel heavy.
+                  Healing takes time. Sleep is broken. Decisions feel overwhelming. Yet proper nutrition remains essential for recovery.
                 </p>
-                <p className="font-medium text-[#4a3728] text-xl animate-fadeInUp opacity-0 animate-delay-500">
-                  Most meal delivery services aren't designed for postpartum healing.
+                <p className="font-semibold text-[#2C2418] text-lg md:text-xl animate-fadeInUp opacity-0 animate-delay-500">
+                  Most meal services aren't designed for postpartum recovery.
                 </p>
-                <p className="text-3xl font-serif text-[#1a1511] pt-4 animate-fadeInUp opacity-0 animate-delay-600">
-                  Birth & Brodo is.
+                <p className="text-2xl md:text-3xl font-serif text-[#dd7409] pt-2 md:pt-4 animate-fadeInUp opacity-0 animate-delay-600 font-bold">
+                  Birth&Brodo is.
                 </p>
               </div>
             </div>
@@ -533,29 +533,29 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 bg-[#dd7409] text-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <footer className="py-12 md:py-16 bg-[#dd7409] text-white">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-lg">
+              <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden shadow-lg">
                 <Image
                   src="/logo.jpg"
-                  alt="Birth & Brodo Logo"
+                  alt="Birth&Brodo Logo"
                   fill
                   className="object-cover"
                 />
               </div>
-              <h3 className="font-serif text-4xl font-semibold">Birth & Brodo</h3>
+              <h3 className="font-serif text-3xl md:text-4xl font-bold">Birth&Brodo</h3>
             </div>
-            <p className="text-xl text-white/90 mb-8 font-medium">Nourishment for the fourth trimester</p>
+            <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 font-medium">Postpartum meal delivery</p>
             
-            <div className="border-t border-white/20 pt-8">
-              <div className="flex flex-wrap justify-center gap-6 text-sm text-white/80">
-                <span>© 2026 Birth & Brodo</span>
+            <div className="border-t border-white/20 pt-6 md:pt-8">
+              <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-white/80">
+                <span>© 2026 Birth&Brodo</span>
                 <span>•</span>
                 <span>Spring 2026 Launch</span>
-                <span>•</span>
-                <span>Postpartum Recovery Meals</span>
+                <span className="hidden sm:inline">•</span>
+                <span className="hidden sm:inline">Postpartum Recovery Meals</span>
               </div>
             </div>
           </div>

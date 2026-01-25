@@ -44,10 +44,10 @@ export default function Header() {
               />
             </div>
             <div>
-              <h1 className="font-serif text-xl font-semibold text-[#1a1511]">
-                Birth & Brodo
+              <h1 className="font-serif text-xl font-semibold text-[#2C2418]">
+                Birth&Brodo
               </h1>
-              <p className="text-xs text-[#4a3728]/70">Nourishment for the fourth trimester</p>
+              <p className="text-xs text-[#2C2418]/70">Postpartum meal delivery</p>
             </div>
           </div>
 

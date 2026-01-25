@@ -70,9 +70,9 @@ export default function EmailCapture() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
+              placeholder="Your email address"
               required
-              className="w-full px-6 py-5 text-lg border-2 border-[#8b6f47]/20 rounded-2xl focus:border-[#fdbf14] focus:outline-none focus:ring-4 focus:ring-[#fcbe11]/10 transition-all bg-[#fef9ed]/30"
+              className="w-full px-4 md:px-6 py-4 md:py-5 text-base md:text-lg border-2 border-[#8b6f47]/20 rounded-2xl focus:border-[#dd7409] focus:outline-none focus:ring-4 focus:ring-[#dd7409]/10 transition-all bg-white"
             />
           </div>
 
