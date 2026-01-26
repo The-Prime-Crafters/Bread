@@ -27,11 +27,11 @@ export default function Home() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 md:mb-8 text-[#2C2418] leading-tight animate-fadeInUp opacity-0 animate-delay-200 max-w-5xl mx-auto">
-            Nourish your recovery,<br className="hidden sm:block" /> one meal at a time
+            Heal Faster.<br className="hidden sm:block" /> Nourish Deeper.
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl mb-10 md:mb-12 text-[#2C2418]/80 max-w-3xl mx-auto leading-relaxed animate-fadeInUp opacity-0 animate-delay-400 px-4">
-            Nutrient-dense meals delivered during the fourth trimester. Ready to eat. Designed for healing.
+            Postpartum meals designed to support recovery during the fourth trimester.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp opacity-0 animate-delay-600">
@@ -42,6 +42,15 @@ export default function Home() {
               <span>Get Early Access</span>
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a
+              href="#how-it-works"
+              className="group inline-flex items-center gap-2 bg-white text-[#dd7409] px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg font-semibold hover:bg-[#FEF3C7] transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl w-full sm:w-auto justify-center border-2 border-[#dd7409]"
+            >
+              <span>See How It Works</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </a>
           </div>
@@ -101,6 +110,146 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Comparison Section - NEW */}
+      <section id="comparison" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-16 animate-fadeInUp opacity-0">
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
+              Not just another meal service
+            </h2>
+            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
+              Birth&Brodo is specifically designed for postpartum recovery — not general meal delivery.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-[#dd7409]/20 animate-fadeInUp opacity-0 animate-delay-200">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead className="bg-gradient-to-r from-[#dd7409] to-[#fcbe11]">
+                  <tr>
+                    <th className="px-6 py-5 text-left text-white font-serif text-xl">Feature</th>
+                    <th className="px-6 py-5 text-center text-white font-serif text-xl">Birth&Brodo</th>
+                    <th className="px-6 py-5 text-center text-white/80 font-serif text-xl">Traditional Meal Services</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#FEF3C7]">
+                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
+                    <td className="px-6 py-5 font-medium text-[#2C2418]">Designed for Postpartum Recovery</td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
+                    <td className="px-6 py-5 font-medium text-[#2C2418]">Nutrient-Dense Healing Foods</td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-center text-[#2C2418]/60 font-medium">Limited</td>
+                  </tr>
+                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
+                    <td className="px-6 py-5 font-medium text-[#2C2418]">One-Handed, Easy-to-Eat Meals</td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
+                    <td className="px-6 py-5 font-medium text-[#2C2418]">Focus on Fourth Trimester Needs</td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
+                    <td className="px-6 py-5 font-medium text-[#2C2418]">Curated Recovery Packs</td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
+                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-center">
+                      <div className="flex justify-center">
+                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* CTA below comparison */}
+          <div className="text-center mt-12 animate-fadeInUp opacity-0 animate-delay-400">
+            <a
+              href="#join"
+              className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <span>Reserve Your Spot</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* What Makes This Different */}
       <section className="section-padding bg-gradient-to-b from-[#FFFBEB] via-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
         <div className="max-w-6xl mx-auto">
@@ -151,10 +300,26 @@ export default function Home() {
               <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
                 Handled
               </h3>
-              <p className="text-[#2C2418]/70 leading-relaxed text-center">
+              <p className="text-lg text-[#2C2418]/80 leading-relaxed">
                 Delivered ready to eat, so nourishment requires zero effort when you need it most.
               </p>
             </div>
+          </div>
+
+          {/* CTA after pillars */}
+          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-700">
+            <div className="inline-block mb-4 px-4 py-2 bg-[#dd7409]/10 rounded-full">
+              <p className="text-sm font-semibold text-[#dd7409]">⏰ Limited Early Access • Spring 2026 Launch</p>
+            </div>
+            <a
+              href="#join"
+              className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <span>Get Notified at Launch</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -240,11 +405,29 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* CTA after product showcase */}
+          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-600">
+            <div className="bg-gradient-to-r from-[#FCD34D]/30 to-[#fcbe11]/20 rounded-2xl p-8 max-w-3xl mx-auto border-2 border-[#dd7409]/30">
+              <p className="text-lg font-semibold text-[#2C2418] mb-4">
+                🎁 Perfect for gifting or self-care
+              </p>
+              <p className="text-[#2C2418]/70 mb-6">
+                Join our early access list to be the first to order when we launch
+              </p>
+              <a
+                href="#join"
+                className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                <span>View Sample Meal Packs</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-
-      {/* How It Works */}
-      <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             How it works
@@ -315,6 +498,35 @@ export default function Home() {
                   className="object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* CTA after "How It Works" */}
+          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-800">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border-2 border-[#dd7409]/20 max-w-2xl mx-auto">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-4 text-[#dd7409]">
+                Ready to prioritize your recovery?
+              </h3>
+              <p className="text-lg text-[#2C2418]/70 mb-6">
+                Join hundreds of mothers preparing for their postpartum journey
+              </p>
+              <a
+                href="#join"
+                className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                <span>Join the Waitlist</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+              <p className="mt-4 text-sm text-[#2C2418]/60">
+                ⚡ Early access members get exclusive launch pricing
+              </p>
             </div>
           </div>
         </div>
@@ -434,9 +646,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Credibility */}
+      {/* Credibility + Founder Story Section */}
       <section className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Why We Built This - Founder Story */}
+          <div className="mb-20 animate-fadeInUp opacity-0">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
+                Why we built this
+              </h2>
+              <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
+                A mission born from real experience
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Image */}
+              <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#dd7409]/20 animate-fadeInLeft opacity-0 animate-delay-200">
+                <Image
+                  src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2128&auto=format&fit=crop"
+                  alt="Mother and baby - the inspiration behind Birth&Brodo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              {/* Story */}
+              <div className="space-y-6 text-lg text-[#2C2418]/80 leading-relaxed animate-fadeInRight opacity-0 animate-delay-300">
+                <p>
+                  <span className="text-2xl font-serif text-[#dd7409] font-semibold block mb-3">
+                    We know what the postpartum period demands.
+                  </span>
+                  The fourth trimester is a time of profound transformation — physically, emotionally, and mentally. Yet most support systems fall short when it comes to the simple, essential need for nourishing food.
+                </p>
+                
+                <p>
+                  Birth&Brodo was created by people who understand postpartum recovery firsthand. We have experienced the sleepless nights, the overwhelming decisions, and the critical importance of proper nutrition during healing.
+                </p>
+
+                <p>
+                  We saw a gap between what new mothers need and what is available. Traditional meal services aren't designed for the unique demands of postpartum recovery. So we decided to build something different — something purpose-built, caring, and truly supportive.
+                </p>
+
+                <p className="font-semibold text-[#dd7409] text-xl pt-4">
+                  Birth&Brodo isn't just a business. It's our way of supporting you through one of life's most demanding journeys.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Thoughtfully Designed Badge */}
           <div className="bg-gradient-to-br from-[#FCD34D]/40 to-[#fcbe11]/20 rounded-3xl p-8 md:p-16 shadow-xl border-4 border-[#dd7409]/20 animate-scaleIn opacity-0 hover:shadow-2xl transition-all duration-500">
             <div className="text-center">
               <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] shadow-lg flex items-center justify-center animate-float">
@@ -444,18 +703,126 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-semibold mb-6 md:mb-8 text-[#dd7409] leading-tight">
-                Thoughtfully designed
-              </h2>
+              <h3 className="text-2xl md:text-4xl font-serif font-semibold mb-6 text-[#dd7409] leading-tight">
+                Built by experts who care
+              </h3>
               
-              <p className="text-lg md:text-2xl text-[#2C2418] leading-relaxed mb-4 md:mb-6 font-medium px-2">
+              <p className="text-lg md:text-xl text-[#2C2418] leading-relaxed mb-4 font-medium px-2">
                 Birth&Brodo is being built by people with experience in postpartum care, nutrition, and food operations.
               </p>
               
-              <p className="text-base md:text-xl text-[#2C2418]/70 leading-relaxed px-2">
-                We're starting small — intentionally — to get this right.
+              <p className="text-base md:text-lg text-[#2C2418]/70 leading-relaxed px-2">
+                We're starting small — intentionally — to get this right. Every detail matters when you're supporting recovery.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - NEW */}
+      <section id="faq" className="section-padding bg-gradient-to-br from-[#FEF3C7] via-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-16 animate-fadeInUp opacity-0">
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
+              Your questions answered
+            </h2>
+            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
+              Everything you need to know about postpartum meal delivery
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {/* FAQ Item 1 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-100">
+              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
+                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                </svg>
+                <span>When should I order Birth&Brodo meals?</span>
+              </h3>
+              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
+                We recommend ordering 2-3 weeks before your due date to ensure meals arrive when you need them most. However, you can order at any point during your postpartum journey. Many second-time parents order in advance, knowing how critical proper nutrition is for recovery.
+              </p>
+            </div>
+
+            {/* FAQ Item 2 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-200">
+              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
+                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                </svg>
+                <span>What makes postpartum nutrition different?</span>
+              </h3>
+              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
+                Postpartum bodies need specific nutrients to support healing, energy restoration, and recovery. Our meals are designed with warming, easy-to-digest ingredients that promote replenishment — not just general health. We focus on nutrient density, ease of eating (one-handed when needed), and foods traditionally known to support postpartum recovery.
+              </p>
+            </div>
+
+            {/* FAQ Item 3 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-300">
+              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
+                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                </svg>
+                <span>How are the meals prepared and delivered?</span>
+              </h3>
+              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
+                All meals are freshly prepared using high-quality ingredients and delivered directly to your door. They're designed to be ready-to-eat with minimal reheating. No meal prep, no planning, no decisions — just nourishment when you need it most.
+              </p>
+            </div>
+
+            {/* FAQ Item 4 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-400">
+              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
+                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                </svg>
+                <span>Can I gift Birth&Brodo to someone else?</span>
+              </h3>
+              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
+                Absolutely! Birth&Brodo makes a meaningful gift for new mothers, expectant parents, or anyone supporting postpartum recovery. Many partners, family members, and friends choose to gift meal packs as a thoughtful way to provide real, lasting support during the fourth trimester.
+              </p>
+            </div>
+
+            {/* FAQ Item 5 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-500">
+              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
+                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                </svg>
+                <span>What if I have dietary restrictions or allergies?</span>
+              </h3>
+              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
+                We're building Birth&Brodo to accommodate various dietary needs. During our early access phase, we'll be collecting information about dietary restrictions and preferences to ensure our meal options work for you. Our goal is to support every mother's recovery journey, regardless of dietary requirements.
+              </p>
+            </div>
+
+            {/* FAQ Item 6 */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-600">
+              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
+                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                </svg>
+                <span>What's included in early access?</span>
+              </h3>
+              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
+                Early access members will receive launch updates, exclusive pricing, and priority access when we launch in Spring 2026. You'll also have the opportunity to provide feedback that shapes how Birth&Brodo serves the postpartum community. Limited spots available.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA after FAQ */}
+          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-700">
+            <p className="text-lg text-[#2C2418]/70 mb-6">Still have questions?</p>
+            <a
+              href="#join"
+              className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <span>Join Early Access & Learn More</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
