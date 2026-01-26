@@ -428,6 +428,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* How It Works */}
+      <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             How it works
