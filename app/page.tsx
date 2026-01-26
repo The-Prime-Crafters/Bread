@@ -8,58 +8,70 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FFFBEB]">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-        <Image
-            src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop"
-            alt="Nourishing postpartum food - warm broth and vegetables"
-            fill
-            className="object-cover animate-scaleIn"
-          priority
-        />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#FFFBEB]/85 via-[#FFFBEB]/80 to-[#FEF3C7]/85"></div>
-        </div>
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[#FFFBEB]">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-32 md:py-20 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            
+            {/* Left Content */}
+            <div className="relative z-10 animate-fadeInLeft opacity-0">
+              <div className="inline-block mb-6 px-6 py-3 bg-white backdrop-blur-sm rounded-full border border-[#dd7409]/20 shadow-sm animate-slideInFromTop opacity-0">
+                <p className="text-sm font-medium text-[#2C2418]">Postpartum meal delivery</p>
+              </div>
+              
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-[#2C2418] leading-tight animate-fadeInUp opacity-0 animate-delay-200">
+                Heal Faster.<br /> Nourish Deeper.
+              </h1>
+              
+              <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-10 text-[#2C2418]/80 leading-relaxed animate-fadeInUp opacity-0 animate-delay-400">
+                Postpartum meals designed to support recovery during the fourth trimester.
+              </p>
 
-        <div className="relative z-10 max-w-6xl mx-auto text-center px-4 md:px-6 py-32 md:py-40">
-          <div className="inline-block mb-8 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-[#dd7409]/20 shadow-sm animate-slideInFromTop opacity-0">
-            <p className="text-sm font-medium text-[#2C2418]">Postpartum meal delivery</p>
-          </div>
-          
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 md:mb-8 text-[#2C2418] leading-tight animate-fadeInUp opacity-0 animate-delay-200 max-w-5xl mx-auto">
-            Heal Faster.<br className="hidden sm:block" /> Nourish Deeper.
-          </h1>
-          
-          <p className="text-lg sm:text-xl md:text-2xl mb-10 md:mb-12 text-[#2C2418]/80 max-w-3xl mx-auto leading-relaxed animate-fadeInUp opacity-0 animate-delay-400 px-4">
-            Postpartum meals designed to support recovery during the fourth trimester.
-          </p>
+              <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp opacity-0 animate-delay-600">
+                <a
+                  href="#join"
+                  className="group inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-base md:text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-[1.02] hover:-translate-y-1 shadow-lg hover:shadow-2xl justify-center"
+                >
+                  <span>Get Early Access</span>
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+                <a
+                  href="#how-it-works"
+                  className="group inline-flex items-center gap-2 bg-white text-[#dd7409] px-8 py-4 rounded-full text-base md:text-lg font-semibold hover:bg-[#FEF3C7] transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl justify-center border-2 border-[#dd7409]"
+                >
+                  <span>See How It Works</span>
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </a>
+              </div>
+              
+              <p className="mt-6 text-sm text-[#2C2418]/60 flex items-center gap-2 animate-fadeIn opacity-0 animate-delay-800">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                </svg>
+                Launching Spring 2026
+              </p>
+            </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp opacity-0 animate-delay-600">
-            <a
-              href="#join"
-              className="group inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-[1.02] hover:-translate-y-1 shadow-lg hover:shadow-2xl w-full sm:w-auto justify-center"
-            >
-              <span>Get Early Access</span>
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </a>
-            <a
-              href="#how-it-works"
-              className="group inline-flex items-center gap-2 bg-white text-[#dd7409] px-8 md:px-10 py-4 md:py-5 rounded-full text-base md:text-lg font-semibold hover:bg-[#FEF3C7] transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl w-full sm:w-auto justify-center border-2 border-[#dd7409]"
-            >
-              <span>See How It Works</span>
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </a>
+            {/* Right Image */}
+            <div className="relative animate-fadeInRight opacity-0 animate-delay-300">
+              <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#dd7409]/20">
+                <Image
+                  src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop"
+                  alt="Nourishing postpartum food - warm broth and vegetables"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#FCD34D]/30 rounded-full blur-3xl animate-float"></div>
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-[#dd7409]/20 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+            </div>
+
           </div>
-          <p className="mt-6 text-sm text-[#2C2418]/60 flex items-center justify-center gap-2 animate-fadeIn opacity-0 animate-delay-800">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-            </svg>
-            Launching Spring 2026
-          </p>
         </div>
 
         {/* Scroll indicator */}
