@@ -58,13 +58,13 @@ export default function Home() {
             {/* Right Image */}
             <div className="relative animate-fadeInRight opacity-0 animate-delay-300">
               <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#dd7409]/20">
-                <Image
+        <Image
                   src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop"
                   alt="Nourishing postpartum food - warm broth and vegetables"
                   fill
                   className="object-cover"
-                  priority
-                />
+          priority
+        />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#FCD34D]/30 rounded-full blur-3xl animate-float"></div>
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Comparison Section - NEW */}
+      {/* Comparison Section - Mobile Friendly */}
       <section id="comparison" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
@@ -134,116 +134,119 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-[#dd7409]/20 animate-fadeInUp opacity-0 animate-delay-200">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gradient-to-r from-[#dd7409] to-[#fcbe11]">
-                  <tr>
-                    <th className="px-6 py-5 text-left text-white font-serif text-xl">Feature</th>
-                    <th className="px-6 py-5 text-center text-white font-serif text-xl">Birth&Brodo</th>
-                    <th className="px-6 py-5 text-center text-white/80 font-serif text-xl">Traditional Meal Services</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#FEF3C7]">
-                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
-                    <td className="px-6 py-5 font-medium text-[#2C2418]">Designed for Postpartum Recovery</td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
-                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
-                    <td className="px-6 py-5 font-medium text-[#2C2418]">Nutrient-Dense Healing Foods</td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
-                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-5 text-center text-[#2C2418]/60 font-medium">Limited</td>
-                  </tr>
-                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
-                    <td className="px-6 py-5 font-medium text-[#2C2418]">One-Handed, Easy-to-Eat Meals</td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
-                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
-                    <td className="px-6 py-5 font-medium text-[#2C2418]">Focus on Fourth Trimester Needs</td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
-                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-[#FEF3C7]/30 transition-colors">
-                    <td className="px-6 py-5 font-medium text-[#2C2418]">Curated Recovery Packs</td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-[#dd7409] flex items-center justify-center">
-                          <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-5 text-center">
-                      <div className="flex justify-center">
-                        <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-                          <svg className="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          {/* Mobile-Friendly Comparison Cards */}
+          <div className="space-y-4 animate-fadeInUp opacity-0 animate-delay-200">
+            {/* Comparison Item 1 */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-[#dd7409]/20 hover:shadow-xl transition-all">
+              <h3 className="font-semibold text-[#2C2418] mb-4 text-lg">Designed for Postpartum Recovery</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-[#dd7409]/5 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#dd7409] flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-semibold text-[#dd7409]">Birth&Brodo</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-gray-300 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-medium text-gray-600">Others</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison Item 2 */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-[#dd7409]/20 hover:shadow-xl transition-all">
+              <h3 className="font-semibold text-[#2C2418] mb-4 text-lg">Nutrient-Dense Healing Foods</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-[#dd7409]/5 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#dd7409] flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-semibold text-[#dd7409]">Birth&Brodo</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-gray-300 flex items-center justify-center">
+                    <p className="text-sm font-medium text-gray-600">Limited</p>
+                  </div>
+                  <p className="text-sm font-medium text-gray-600">Others</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison Item 3 */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-[#dd7409]/20 hover:shadow-xl transition-all">
+              <h3 className="font-semibold text-[#2C2418] mb-4 text-lg">One-Handed, Easy-to-Eat Meals</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-[#dd7409]/5 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#dd7409] flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-semibold text-[#dd7409]">Birth&Brodo</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-gray-300 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-medium text-gray-600">Others</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison Item 4 */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-[#dd7409]/20 hover:shadow-xl transition-all">
+              <h3 className="font-semibold text-[#2C2418] mb-4 text-lg">Focus on Fourth Trimester Needs</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-[#dd7409]/5 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#dd7409] flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-semibold text-[#dd7409]">Birth&Brodo</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-gray-300 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-medium text-gray-600">Others</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Comparison Item 5 */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-[#dd7409]/20 hover:shadow-xl transition-all">
+              <h3 className="font-semibold text-[#2C2418] mb-4 text-lg">Curated Recovery Packs</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-[#dd7409]/5 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-[#dd7409] flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-semibold text-[#dd7409]">Birth&Brodo</p>
+                </div>
+                <div className="text-center p-4 bg-gray-50 rounded-xl">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full bg-gray-300 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-medium text-gray-600">Others</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -345,8 +348,8 @@ export default function Home() {
             </h2>
             <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
               Each pack is designed for specific postpartum needs, from the first week to C-section recovery.
-            </p>
-          </div>
+          </p>
+        </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Product 1 */}
@@ -506,7 +509,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
-                <Image
+            <Image
                   src="https://images.unsplash.com/photo-1686668108595-3c2171a8fc78?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Mother bonding with baby"
                   fill
@@ -837,8 +840,8 @@ export default function Home() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </a>
-          </div>
+          </a>
+        </div>
         </div>
       </section>
 
