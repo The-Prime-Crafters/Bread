@@ -14,16 +14,12 @@ export default function Home() {
             
             {/* Left Content */}
             <div className="relative z-10 animate-fadeInLeft opacity-0">
-              <div className="inline-block mb-6 px-6 py-3 bg-white backdrop-blur-sm rounded-full border border-[#dd7409]/20 shadow-sm animate-slideInFromTop opacity-0">
-                <p className="text-sm font-medium text-[#2C2418]">Postpartum meal delivery</p>
-              </div>
-              
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-[#2C2418] leading-tight animate-fadeInUp opacity-0 animate-delay-200">
-                Heal Faster.<br /> Nourish Deeper.
+                Nourishing meals for pregnancy & postpartum recovery
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-10 text-[#2C2418]/80 leading-relaxed animate-fadeInUp opacity-0 animate-delay-400">
-                Postpartum meals designed to support recovery during the fourth trimester.
+                Chef-made meals designed to support healing, energy, and nourishment — so you can focus on yourself and your baby.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp opacity-0 animate-delay-600">
@@ -31,28 +27,12 @@ export default function Home() {
                   href="#join"
                   className="group inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-base md:text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-[1.02] hover:-translate-y-1 shadow-lg hover:shadow-2xl justify-center"
                 >
-                  <span>Get Early Access</span>
+                  <span>Join the Waitlist</span>
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </a>
-                <a
-                  href="#how-it-works"
-                  className="group inline-flex items-center gap-2 bg-white text-[#dd7409] px-8 py-4 rounded-full text-base md:text-lg font-semibold hover:bg-[#FEF3C7] transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl justify-center border-2 border-[#dd7409]"
-                >
-                  <span>See How It Works</span>
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </a>
               </div>
-              
-              <p className="mt-6 text-sm text-[#2C2418]/60 flex items-center gap-2 animate-fadeIn opacity-0 animate-delay-800">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                </svg>
-                Launching Spring 2026
-              </p>
             </div>
 
             {/* Right Image */}
@@ -74,18 +54,62 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <a 
-          href="#about"
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-fadeIn opacity-0 animate-delay-700 cursor-pointer"
-          aria-label="Scroll to content"
-        >
-          <div className="animate-bounce">
-            <svg className="w-6 h-6 text-[#2C2418]/40 hover:text-[#dd7409] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+      </section>
+
+      {/* Why Birth & Brodo Section - NEW */}
+      <section id="why" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 md:px-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
+            Why Birth & Brodo
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Column 1 */}
+            <div className="bg-gradient-to-br from-white to-[#FEF3C7]/30 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-200 hover:-translate-y-2">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
+                Designed for Mothers
+              </h3>
+              <p className="text-[#2C2418]/70 leading-relaxed text-center">
+                Meals created specifically for pregnancy and postpartum — not generic meal prep.
+              </p>
+            </div>
+
+            {/* Column 2 */}
+            <div className="bg-gradient-to-br from-white to-[#FEF3C7]/30 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-400 hover:-translate-y-2">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
+                Healing Ingredients
+              </h3>
+              <p className="text-[#2C2418]/70 leading-relaxed text-center">
+                Warming foods, mineral-rich broths, and easy-to-digest meals inspired by traditional postpartum care.
+              </p>
+            </div>
+
+            {/* Column 3 */}
+            <div className="bg-gradient-to-br from-white to-[#FEF3C7]/30 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-600 hover:-translate-y-2">
+              <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-serif font-semibold mb-3 text-[#dd7409] text-center">
+                Delivered With Care
+              </h3>
+              <p className="text-[#2C2418]/70 leading-relaxed text-center">
+                No planning, no grocery shopping, no stress. Just heat, eat, and rest.
+              </p>
+            </div>
           </div>
-        </a>
+        </div>
       </section>
 
       {/* The Problem Section with Image */}
@@ -446,104 +470,158 @@ export default function Home() {
 
       {/* How It Works */}
       <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
-            How it works
+            How It Works
           </h2>
 
           <div className="space-y-8">
-            <div className="flex flex-col md:flex-row gap-8 items-center bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-200 hover:-translate-x-2 border-2 border-[#FCD34D]/30">
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
+            <div className="flex flex-col md:flex-row gap-8 items-start bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-200 border-2 border-[#FCD34D]/30">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
                 1
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
-                  Choose a recovery pack
+                  Join the Waitlist
                 </h3>
                 <p className="text-lg text-[#2C2418]/70 leading-relaxed">
-                  Select from our curated meal packages designed for your specific postpartum needs and recovery timeline.
+                  Tell us your due date and location.
                 </p>
-              </div>
-              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
-                <Image
-                  src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop"
-                  alt="Mother choosing meal options"
-                  fill
-                  className="object-cover hover:scale-110 transition-transform duration-500"
-                />
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInRight opacity-0 animate-delay-400 hover:translate-x-2 border-2 border-[#FCD34D]/30">
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
+            <div className="flex flex-col md:flex-row gap-8 items-start bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInRight opacity-0 animate-delay-400 border-2 border-[#FCD34D]/30">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
                 2
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
-                  We prepare and deliver
+                  We Prepare & Deliver
                 </h3>
                 <p className="text-lg text-[#2C2418]/70 leading-relaxed">
-                  Fresh, warming meals prepared with care and delivered right to your door at the perfect time.
+                  Fresh meals are prepared weekly and delivered to your door.
                 </p>
-              </div>
-              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
-                <Image
-                  src="https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGRlbGl2ZXJ5fGVufDB8fDB8fHww"
-                  alt="Delivery to your door"
-                  fill
-                  className="object-cover hover:scale-110 transition-transform duration-500"
-                />
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-8 items-center bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-600 hover:-translate-x-2 border-2 border-[#FCD34D]/30">
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg animate-pulse-glow">
+            <div className="flex flex-col md:flex-row gap-8 items-start bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-600 border-2 border-[#FCD34D]/30">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
                 3
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
-                  You focus on healing
+                  You Rest & Recover
                 </h3>
                 <p className="text-lg text-[#2C2418]/70 leading-relaxed">
-                  No planning. No cooking. No decisions. Just nourishment when you need it most.
+                  Heat, eat, and focus on healing and your baby.
                 </p>
-              </div>
-              <div className="relative w-48 h-32 rounded-xl overflow-hidden shadow-lg border-2 border-[#FCD34D]/50">
-            <Image
-                  src="https://images.unsplash.com/photo-1686668108595-3c2171a8fc78?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Mother bonding with baby"
-                  fill
-                  className="object-cover hover:scale-110 transition-transform duration-500"
-                />
               </div>
             </div>
           </div>
 
           {/* CTA after "How It Works" */}
           <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-800">
-            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border-2 border-[#dd7409]/20 max-w-2xl mx-auto">
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+            <a
+              href="#join"
+              className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <span>Join the Waitlist</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Who It's For Section - NEW */}
+      <section id="for-whom" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 md:px-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#dd7409] animate-fadeInUp opacity-0">
+            Who It's For
+          </h2>
+          <p className="text-lg text-[#2C2418]/70 text-center mb-12 max-w-2xl mx-auto animate-fadeInUp opacity-0 animate-delay-200">
+            Supporting you through every stage of your journey
+          </p>
+
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border-2 border-[#dd7409]/20 animate-fadeInUp opacity-0 animate-delay-300">
+            <ul className="space-y-6">
+              <li className="flex items-start gap-4 group">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-lg text-[#2C2418] group-hover:text-[#dd7409] transition-colors">Expecting mothers</span>
+              </li>
+              <li className="flex items-start gap-4 group">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-lg text-[#2C2418] group-hover:text-[#dd7409] transition-colors">Postpartum mothers</span>
+              </li>
+              <li className="flex items-start gap-4 group">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-lg text-[#2C2418] group-hover:text-[#dd7409] transition-colors">Families supporting a new mom</span>
+              </li>
+              <li className="flex items-start gap-4 group">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <span className="text-lg text-[#2C2418] group-hover:text-[#dd7409] transition-colors">Anyone gifting nourishment</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof Section - NEW */}
+      <section id="testimonials" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 md:px-6">
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
+            What People Are Saying
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-[#FCD34D]/30 hover:shadow-xl transition-all duration-300 animate-fadeInUp opacity-0 animate-delay-200">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-[#fcbe11]" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
               </div>
-              <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-4 text-[#dd7409]">
-                Ready to prioritize your recovery?
-              </h3>
-              <p className="text-lg text-[#2C2418]/70 mb-6">
-                Join hundreds of mothers preparing for their postpartum journey
+              <p className="text-lg text-[#2C2418] leading-relaxed mb-4 italic">
+                "This is exactly what I wish I had after giving birth."
               </p>
-              <a
-                href="#join"
-                className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                <span>Join the Waitlist</span>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </a>
-              <p className="mt-4 text-sm text-[#2C2418]/60">
-                ⚡ Early access members get exclusive launch pricing
+              <p className="text-sm text-[#2C2418]/60 font-medium">
+                — Expecting Mother
+              </p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-[#FCD34D]/30 hover:shadow-xl transition-all duration-300 animate-fadeInUp opacity-0 animate-delay-400">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-[#fcbe11]" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-lg text-[#2C2418] leading-relaxed mb-4 italic">
+                "Postpartum nutrition like this can make a real difference in recovery."
+              </p>
+              <p className="text-sm text-[#2C2418]/60 font-medium">
+                — Postpartum Care Professional
               </p>
             </div>
           </div>
@@ -551,7 +629,7 @@ export default function Home() {
       </section>
 
       {/* Who This Is For */}
-      <section id="for-whom" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/30 overflow-hidden">
+      <section id="for-whom-cards" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/30 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             Who Birth&Brodo is for
@@ -742,10 +820,10 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
             <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
-              Your questions answered
+              Frequently Asked Questions
             </h2>
             <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
-              Everything you need to know about postpartum meal delivery
+              Everything you need to know
             </p>
           </div>
 
@@ -756,10 +834,10 @@ export default function Home() {
                 <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
                 </svg>
-                <span>When should I order Birth&Brodo meals?</span>
+                <span>When do you deliver?</span>
               </h3>
               <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                We recommend ordering 2-3 weeks before your due date to ensure meals arrive when you need them most. However, you can order at any point during your postpartum journey. Many second-time parents order in advance, knowing how critical proper nutrition is for recovery.
+                We plan weekly deliveries based on location.
               </p>
             </div>
 
@@ -769,10 +847,10 @@ export default function Home() {
                 <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
                 </svg>
-                <span>What makes postpartum nutrition different?</span>
+                <span>Is this for pregnancy or postpartum?</span>
               </h3>
               <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Postpartum bodies need specific nutrients to support healing, energy restoration, and recovery. Our meals are designed with warming, easy-to-digest ingredients that promote replenishment — not just general health. We focus on nutrient density, ease of eating (one-handed when needed), and foods traditionally known to support postpartum recovery.
+                Both — meals are designed to support nourishment during pregnancy and recovery after birth.
               </p>
             </div>
 
@@ -782,10 +860,10 @@ export default function Home() {
                 <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
                 </svg>
-                <span>How are the meals prepared and delivered?</span>
+                <span>Are meals fresh or frozen?</span>
               </h3>
               <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                All meals are freshly prepared using high-quality ingredients and delivered directly to your door. They're designed to be ready-to-eat with minimal reheating. No meal prep, no planning, no decisions — just nourishment when you need it most.
+                Meals are prepared fresh and packaged for convenience.
               </p>
             </div>
 
@@ -795,10 +873,10 @@ export default function Home() {
                 <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
                 </svg>
-                <span>Can I gift Birth&Brodo to someone else?</span>
+                <span>Can someone order this as a gift?</span>
               </h3>
               <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Absolutely! Birth&Brodo makes a meaningful gift for new mothers, expectant parents, or anyone supporting postpartum recovery. Many partners, family members, and friends choose to gift meal packs as a thoughtful way to provide real, lasting support during the fourth trimester.
+                Yes — Birth & Brodo makes a meaningful gift for new parents.
               </p>
             </div>
 
@@ -808,35 +886,21 @@ export default function Home() {
                 <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
                 </svg>
-                <span>What if I have dietary restrictions or allergies?</span>
+                <span>Where will you launch first?</span>
               </h3>
               <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                We're building Birth&Brodo to accommodate various dietary needs. During our early access phase, we'll be collecting information about dietary restrictions and preferences to ensure our meal options work for you. Our goal is to support every mother's recovery journey, regardless of dietary requirements.
-              </p>
-            </div>
-
-            {/* FAQ Item 6 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-600">
-              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
-                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
-                <span>What's included in early access?</span>
-              </h3>
-              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Early access members will receive launch updates, exclusive pricing, and priority access when we launch in Spring 2026. You'll also have the opportunity to provide feedback that shapes how Birth&Brodo serves the postpartum community. Limited spots available.
+                Launch locations will be announced to our waitlist first.
               </p>
             </div>
           </div>
 
           {/* CTA after FAQ */}
-          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-700">
-            <p className="text-lg text-[#2C2418]/70 mb-6">Still have questions?</p>
+          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-600">
             <a
               href="#join"
               className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              <span>Join Early Access & Learn More</span>
+              <span>Join the Waitlist</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -851,22 +915,19 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         
-        <div className="max-w-5xl mx-auto relative z-10">
+        <div className="max-w-5xl mx-auto relative z-10 px-4 md:px-6">
           <div className="text-center mb-12 animate-fadeInUp opacity-0">
-            <div className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6">
-              <p className="text-white/90 font-medium">Limited Early Access</p>
-            </div>
-            <h2 className="text-5xl md:text-6xl font-serif font-semibold mb-6 text-white">
-              Be the first to know when we launch
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-6 text-white">
+              Join the Early Access List
             </h2>
             
-            <p className="text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Join the early access list for launch updates, limited availability, and founding-member pricing.
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Be the first to know when we launch in your area. Early subscribers receive priority access and founding-parent perks.
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto animate-fadeInUp opacity-0 animate-delay-300">
-            <div className="bg-white rounded-3xl p-12 shadow-2xl">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
               <EmailCapture />
             </div>
           </div>
@@ -885,40 +946,14 @@ export default function Home() {
               </svg>
               <span>Spring 2026 Launch</span>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-              </svg>
-              <span>Limited founding members</span>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Soft Close */}
-      <section className="py-20 bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/40">
-        <div className="max-w-4xl mx-auto text-center px-6 animate-fadeIn opacity-0">
-          <div className="bg-white rounded-3xl p-12 shadow-xl border-2 border-[#dd7409]/20">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] flex items-center justify-center shadow-lg">
-              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-serif font-semibold mb-4 text-[#dd7409]">
-              Launching Spring 2026
-            </h3>
-            <p className="text-lg text-[#2C2418]/80 leading-relaxed mb-2">
-              We're currently capturing early interest and preparing for a thoughtful launch.
-            </p>
-            <p className="text-[#2C2418]/60">
-              No spam. No pressure. Just updates on our progress.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Soft Close - REMOVED per plan instructions */}
 
       {/* Footer */}
-      <footer className="py-12 md:py-16 bg-[#dd7409] text-white">
+      <footer className="py-12 md:py-16 bg-[#2C2418] text-white">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -932,16 +967,32 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-3xl md:text-4xl font-bold">Birth&Brodo</h3>
             </div>
-            <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 font-medium">Postpartum meal delivery</p>
+            <p className="text-lg text-white/90 mb-6">made with care for mothers.</p>
             
-            <div className="border-t border-white/20 pt-6 md:pt-8">
-              <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm text-white/80">
-                <span>© 2026 Birth&Brodo</span>
-                <span>•</span>
-                <span>Spring 2026 Launch</span>
-                <span className="hidden sm:inline">•</span>
-                <span className="hidden sm:inline">Postpartum Recovery Meals</span>
-              </div>
+            <div className="mb-6">
+              <a href="mailto:hello@birthandbrodo.com" className="text-white/80 hover:text-white transition-colors">
+                hello@birthandbrodo.com
+              </a>
+            </div>
+
+            <div className="flex justify-center gap-6 mb-8">
+              <a 
+                href="https://instagram.com/birthandbrodo" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <div className="border-t border-white/20 pt-6">
+              <p className="text-sm text-white/70">
+                © 2026 Birth&Brodo. All rights reserved.
+              </p>
             </div>
           </div>
         </div>

@@ -89,7 +89,7 @@ export default function Header() {
                 href="#join"
                 className="bg-[#dd7409] text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 hover:bg-[#c66508]"
               >
-                Join Early Access
+                Join the Waitlist
               </a>
             </nav>
 
@@ -144,7 +144,7 @@ export default function Header() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block text-center bg-[#dd7409] text-white px-6 py-3 rounded-full font-medium hover:bg-[#c66508] transition-all mt-2"
                 >
-                  Join Early Access
+                  Join the Waitlist
                 </a>
               </nav>
             </div>
