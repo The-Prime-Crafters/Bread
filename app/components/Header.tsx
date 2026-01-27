@@ -29,82 +29,74 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gradient-to-r from-[#FFFBEB]/95 to-[#FEF3C7]/95 backdrop-blur-lg shadow-lg ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#E89B3D] shadow-md ${
           isScrolled
-            ? 'py-4'
-            : 'py-6'
+            ? 'py-3'
+            : 'py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
-              <div className="relative w-12 h-12 rounded-full overflow-hidden shadow-md hover:scale-110 transition-transform duration-300">
+            {/* Logo with Text */}
+            <div className="flex items-center gap-4 cursor-pointer" onClick={() => scrollToSection('hero')}>
+              <div className="relative w-16 h-16 flex-shrink-0">
                 <Image
                   src="/logo.jpg"
                   alt="Birth & Brodo Logo"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
-              <div>
-                <h1 className="font-serif text-xl font-semibold text-[#2C2418]">
+              <div className="flex flex-col">
+                <h1 className="font-serif text-2xl md:text-3xl font-bold text-white leading-tight">
                   Birth&Brodo
                 </h1>
-                <p className="text-xs text-[#2C2418]/70">Postpartum meal delivery</p>
+                <p className="text-xs md:text-sm text-white/90 font-medium tracking-wider uppercase">
+                  Postpartum Nourishment
+                </p>
               </div>
             </div>
 
-            {/* Navigation Links */}
-            <nav className="hidden md:flex items-center gap-8">
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-8 xl:gap-12">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-[#4a3728] hover:text-[#1a1511] font-medium transition-colors relative group"
+                className="text-white/90 hover:text-white text-lg font-medium transition-colors"
               >
                 About
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#dd7409] group-hover:w-full transition-all duration-300"></span>
               </button>
               <button
                 onClick={() => scrollToSection('products')}
-                className="text-[#4a3728] hover:text-[#1a1511] font-medium transition-colors relative group"
+                className="text-white/90 hover:text-white text-lg font-medium transition-colors"
               >
-                Products
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#dd7409] group-hover:w-full transition-all duration-300"></span>
+                Our Kits
               </button>
               <button
-                onClick={() => scrollToSection('how-it-works')}
-                className="text-[#4a3728] hover:text-[#1a1511] font-medium transition-colors relative group"
+                onClick={() => scrollToSection('faq')}
+                className="text-white/90 hover:text-white text-lg font-medium transition-colors"
               >
-                How It Works
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#dd7409] group-hover:w-full transition-all duration-300"></span>
-              </button>
-              <button
-                onClick={() => scrollToSection('for-whom')}
-                className="text-[#4a3728] hover:text-[#1a1511] font-medium transition-colors relative group"
-              >
-                For Whom
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#dd7409] group-hover:w-full transition-all duration-300"></span>
+                FAQ
               </button>
               <a
                 href="#join"
-                className="bg-[#dd7409] text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 hover:bg-[#c66508]"
+                className="bg-[#8B4513] text-white px-8 py-3 rounded font-semibold hover:bg-[#6B3410] transition-all duration-300 shadow-lg"
               >
-                Join the Waitlist
+                Join Early Access
               </a>
             </nav>
 
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden p-2 hover:bg-[#FEF3C7] rounded-lg transition-colors" 
+              className="lg:hidden p-2 hover:bg-white/10 rounded-lg transition-colors" 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Menu"
             >
               {isMobileMenuOpen ? (
-                <svg className="w-6 h-6 text-[#4a3728]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-6 h-6 text-[#4a3728]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -113,38 +105,32 @@ export default function Header() {
 
           {/* Mobile Menu Dropdown */}
           {isMobileMenuOpen && (
-            <div className="md:hidden mt-4 py-4 border-t border-[#8b6f47]/10 animate-fadeInUp">
+            <div className="lg:hidden mt-4 py-4 border-t border-white/20 animate-fadeInUp">
               <nav className="flex flex-col space-y-2">
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
+                  className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
                 >
                   About
                 </button>
                 <button
                   onClick={() => scrollToSection('products')}
-                  className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
+                  className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
                 >
-                  Products
+                  Our Kits
                 </button>
                 <button
-                  onClick={() => scrollToSection('how-it-works')}
-                  className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
+                  onClick={() => scrollToSection('faq')}
+                  className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
                 >
-                  How It Works
-                </button>
-                <button
-                  onClick={() => scrollToSection('for-whom')}
-                  className="text-left px-4 py-3 text-[#4a3728] hover:bg-[#FEF3C7] rounded-lg font-medium transition-colors"
-                >
-                  For Whom
+                  FAQ
                 </button>
                 <a
                   href="#join"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-center bg-[#dd7409] text-white px-6 py-3 rounded-full font-medium hover:bg-[#c66508] transition-all mt-2"
+                  className="block text-center bg-[#8B4513] text-white px-6 py-3 rounded font-semibold hover:bg-[#6B3410] transition-all mt-2"
                 >
-                  Join the Waitlist
+                  Join Early Access
                 </a>
               </nav>
             </div>
