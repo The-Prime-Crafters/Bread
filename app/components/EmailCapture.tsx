@@ -97,7 +97,7 @@ export default function EmailCapture() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email address"
+              placeholder="Enter your email"
               required
               className="w-full px-4 md:px-6 py-4 md:py-5 text-base md:text-lg border-2 border-[#8b6f47]/20 rounded-2xl focus:border-[#dd7409] focus:outline-none focus:ring-4 focus:ring-[#dd7409]/10 transition-all bg-white"
             />
@@ -124,7 +124,7 @@ export default function EmailCapture() {
           {/* Due Date Field (Optional) */}
           <div>
             <label htmlFor="dueDate" className="block text-sm font-medium text-[#4a3728]/70 mb-2">
-              Due Date <span className="text-[#4a3728]/50 text-xs">(Optional)</span>
+              Baby's Due Date or Birth Date <span className="text-[#4a3728]/50 text-xs">(Optional)</span>
             </label>
             <input
               type="date"

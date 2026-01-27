@@ -61,27 +61,30 @@ export default function Header() {
             <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-colors"
+                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-all duration-200 hover:scale-105 relative group"
               >
                 About
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B4513] group-hover:w-full transition-all duration-300"></span>
               </button>
               <span className="text-[#8B4513] text-xl">|</span>
               <button
                 onClick={() => scrollToSection('products')}
-                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-colors"
+                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-all duration-200 hover:scale-105 relative group"
               >
                 Our Kits
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B4513] group-hover:w-full transition-all duration-300"></span>
               </button>
               <span className="text-[#8B4513] text-xl">|</span>
               <button
                 onClick={() => scrollToSection('faq')}
-                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-colors"
+                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-all duration-200 hover:scale-105 relative group"
               >
                 FAQ
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B4513] group-hover:w-full transition-all duration-300"></span>
               </button>
               <a
                 href="#join"
-                className="ml-4 bg-[#8B4513] text-white px-8 py-3 rounded font-semibold hover:bg-[#6B3410] transition-all duration-300 shadow-lg"
+                className="ml-4 bg-[#8B4513] text-white px-8 py-3 rounded font-semibold hover:bg-[#6B3410] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Join Early Access
               </a>
