@@ -3,7 +3,10 @@
 import { useState } from 'react';
 
 export default function EmailCapture() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [zipCode, setZipCode] = useState('');
+  const [dueDate, setDueDate] = useState('');
   const [signupType, setSignupType] = useState<'self' | 'gift' | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -24,7 +27,10 @@ export default function EmailCapture() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          name,
           email,
+          zipCode,
+          dueDate: dueDate || null,
           signupType,
           timestamp: new Date().toISOString()
         })
@@ -65,9 +71,30 @@ export default function EmailCapture() {
     <div className="max-w-2xl mx-auto">
       <div className="bg-white rounded-3xl p-10 shadow-xl border border-[#fcbe11]/10">
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Name Field */}
           <div>
+            <label htmlFor="name" className="block text-sm font-medium text-[#4a3728]/70 mb-2">
+              Name <span className="text-[#dd7409]">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Your full name"
+              required
+              className="w-full px-4 md:px-6 py-4 md:py-5 text-base md:text-lg border-2 border-[#8b6f47]/20 rounded-2xl focus:border-[#dd7409] focus:outline-none focus:ring-4 focus:ring-[#dd7409]/10 transition-all bg-white"
+            />
+          </div>
+
+          {/* Email Field */}
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-[#4a3728]/70 mb-2">
+              Email <span className="text-[#dd7409]">*</span>
+            </label>
             <input
               type="email"
+              id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
@@ -76,6 +103,39 @@ export default function EmailCapture() {
             />
           </div>
 
+          {/* Zip Code Field */}
+          <div>
+            <label htmlFor="zipCode" className="block text-sm font-medium text-[#4a3728]/70 mb-2">
+              Zip Code <span className="text-[#dd7409]">*</span>
+            </label>
+            <input
+              type="text"
+              id="zipCode"
+              value={zipCode}
+              onChange={(e) => setZipCode(e.target.value)}
+              placeholder="Your zip code"
+              required
+              pattern="[0-9]{5}"
+              maxLength={5}
+              className="w-full px-4 md:px-6 py-4 md:py-5 text-base md:text-lg border-2 border-[#8b6f47]/20 rounded-2xl focus:border-[#dd7409] focus:outline-none focus:ring-4 focus:ring-[#dd7409]/10 transition-all bg-white"
+            />
+          </div>
+
+          {/* Due Date Field (Optional) */}
+          <div>
+            <label htmlFor="dueDate" className="block text-sm font-medium text-[#4a3728]/70 mb-2">
+              Due Date <span className="text-[#4a3728]/50 text-xs">(Optional)</span>
+            </label>
+            <input
+              type="date"
+              id="dueDate"
+              value={dueDate}
+              onChange={(e) => setDueDate(e.target.value)}
+              className="w-full px-4 md:px-6 py-4 md:py-5 text-base md:text-lg border-2 border-[#8b6f47]/20 rounded-2xl focus:border-[#dd7409] focus:outline-none focus:ring-4 focus:ring-[#dd7409]/10 transition-all bg-white"
+            />
+          </div>
+
+          {/* Signup Type Selection */}
           <div className="space-y-4">
             <p className="text-sm font-medium text-[#4a3728]/70 uppercase tracking-wide">I'm interested for: <span className="text-[#dd7409]">*</span></p>
             
