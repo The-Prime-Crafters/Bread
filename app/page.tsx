@@ -7,8 +7,8 @@ export default function Home() {
     <div className="min-h-screen bg-[#FFFBEB]">
       <Header />
       
-      {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[#FFFBEB]">
+      {/* Hero Section - LIGHT 1 */}
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[#FFF8E7]">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-32 md:py-20 w-full">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
@@ -56,8 +56,8 @@ export default function Home() {
 
       </section>
 
-      {/* Why Birth & Brodo Section - NEW */}
-      <section id="why" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+      {/* Why Birth & Brodo Section - LIGHT 2 */}
+      <section id="why" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             Why Birth & Brodo
@@ -112,8 +112,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Problem Section with Image */}
-      <section id="about" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
+      {/* The Problem Section with Image - DARK 1 */}
+      <section id="about" className="section-padding bg-gradient-to-br from-[#8B6F47] to-[#6B5538] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl animate-fadeInLeft opacity-0 border-4 border-[#FCD34D]/30">
@@ -126,18 +126,18 @@ export default function Home() {
             </div>
             
             <div className="animate-fadeInRight opacity-0 animate-delay-300 px-4 md:px-0">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#dd7409] leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#FCD34D] leading-tight">
                 The postpartum period is physically demanding
               </h2>
               
-              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-[#2C2418]/80 leading-relaxed">
+              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-white/90 leading-relaxed">
                 <p className="animate-fadeInUp opacity-0 animate-delay-400">
                   Healing takes time. Sleep is broken. Decisions feel overwhelming. Yet proper nutrition remains essential for recovery.
                 </p>
-                <p className="font-semibold text-[#2C2418] text-lg md:text-xl animate-fadeInUp opacity-0 animate-delay-500">
+                <p className="font-semibold text-white text-lg md:text-xl animate-fadeInUp opacity-0 animate-delay-500">
                   Most meal services aren't designed for postpartum recovery.
                 </p>
-                <p className="text-2xl md:text-3xl font-serif text-[#dd7409] pt-2 md:pt-4 animate-fadeInUp opacity-0 animate-delay-600 font-bold">
+                <p className="text-2xl md:text-3xl font-serif text-[#FCD34D] pt-2 md:pt-4 animate-fadeInUp opacity-0 animate-delay-600 font-bold">
                   Birth&Brodo is.
                 </p>
               </div>
@@ -146,8 +146,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Comparison Section - Mobile Friendly */}
-      <section id="comparison" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+      {/* Comparison Section - LIGHT 1 */}
+      <section id="comparison" className="section-padding bg-gradient-to-br from-[#FFF8E7] to-[#FFFBEB] overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
             <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
@@ -289,8 +289,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What Makes This Different */}
-      <section className="section-padding bg-gradient-to-b from-[#FFFBEB] via-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
+      {/* What Makes This Different - LIGHT 2 */}
+      <section className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
             <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
@@ -363,14 +363,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Showcase */}
-      <section id="products" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 overflow-hidden">
+      {/* Product Showcase - DARK 2 */}
+      <section id="products" className="section-padding bg-gradient-to-br from-[#8B6F47] to-[#6B5538] overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
-            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#FCD34D]">
               Thoughtfully curated recovery packs
             </h2>
-            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Each pack is designed for specific postpartum needs, from the first week to C-section recovery.
           </p>
         </div>
@@ -468,8 +468,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+      {/* How It Works - LIGHT 1 */}
+      <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFF8E7] to-[#FFFBEB] overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             How It Works
@@ -534,8 +534,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who It's For Section - NEW */}
-      <section id="for-whom" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
+      {/* Who It's For Section - LIGHT 2 */}
+      <section id="for-whom" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             Who It's For
@@ -583,10 +583,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof Section - NEW */}
-      <section id="testimonials" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+      {/* Social Proof Section - DARK 3 */}
+      <section id="testimonials" className="section-padding bg-gradient-to-br from-[#8B6F47] to-[#6B5538] overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
-          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#FCD34D] animate-fadeInUp opacity-0">
             What People Are Saying
           </h2>
 
@@ -628,8 +628,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who This Is For */}
-      <section id="for-whom-cards" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/30 overflow-hidden">
+      {/* Who This Is For Cards - LIGHT 1 */}
+      <section id="for-whom-cards" className="section-padding bg-gradient-to-br from-[#FFF8E7] to-[#FFFBEB] overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#dd7409] animate-fadeInUp opacity-0">
             Who Birth&Brodo is for
@@ -742,8 +742,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Credibility + Founder Story Section */}
-      <section className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+      {/* Credibility + Founder Story Section - LIGHT 2 */}
+      <section className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FCD34D]/20 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4">
           {/* Why We Built This - Founder Story */}
           <div className="mb-20 animate-fadeInUp opacity-0">
@@ -815,14 +815,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section - NEW */}
-      <section id="faq" className="section-padding bg-gradient-to-br from-[#FEF3C7] via-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
+      {/* FAQ Section - DARK 4 */}
+      <section id="faq" className="section-padding bg-gradient-to-br from-[#8B6F47] to-[#6B5538] overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <div className="text-center mb-16 animate-fadeInUp opacity-0">
-            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
+            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#FCD34D]">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Everything you need to know
             </p>
           </div>
