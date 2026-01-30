@@ -19,12 +19,20 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false); // Close mobile menu after clicking
+  };
+
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#E89B3D] shadow-md ${isScrolled
-            ? 'py-3'
-            : 'py-4'
+          ? 'py-3'
+          : 'py-4'
           }`}
       >
         <div className="max-w-7xl mx-auto px-6">
@@ -51,14 +59,7 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-              <Link
-                href="/about"
-                className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-all duration-200 hover:scale-105 relative group"
-              >
-                About
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B4513] group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <span className="text-[#8B4513] text-xl">|</span>
+
               <Link
                 href="/products"
                 className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-all duration-200 hover:scale-105 relative group"
@@ -67,13 +68,19 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B4513] group-hover:w-full transition-all duration-300"></span>
               </Link>
               <span className="text-[#8B4513] text-xl">|</span>
-              <Link
-                href="/faq"
+              <button
+                onClick={() => {
+                  if (window.location.pathname !== '/') {
+                    window.location.href = '/#faq';
+                  } else {
+                    scrollToSection('faq');
+                  }
+                }}
                 className="text-[#8B4513] hover:text-[#6B3410] text-lg font-medium transition-all duration-200 hover:scale-105 relative group"
               >
                 FAQ
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8B4513] group-hover:w-full transition-all duration-300"></span>
-              </Link>
+              </button>
               <span className="text-[#8B4513] text-xl">|</span>
               <Link
                 href="/how-it-works"
@@ -120,24 +127,36 @@ export default function Header() {
           {isMobileMenuOpen && (
             <div className="lg:hidden mt-4 py-4 border-t border-white/20 animate-fadeInUp">
               <nav className="flex flex-col space-y-2">
-                <Link
-                  href="/about"
+                <button
+                  onClick={() => {
+                    if (window.location.pathname !== '/') {
+                      window.location.href = '/#about';
+                    } else {
+                      scrollToSection('about');
+                    }
+                  }}
                   className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
                 >
                   About
-                </Link>
+                </button>
                 <Link
                   href="/products"
                   className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
                 >
                   Our Kits
                 </Link>
-                <Link
-                  href="/faq"
+                <button
+                  onClick={() => {
+                    if (window.location.pathname !== '/') {
+                      window.location.href = '/#faq';
+                    } else {
+                      scrollToSection('faq');
+                    }
+                  }}
                   className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
                 >
                   FAQ
-                </Link>
+                </button>
                 <Link
                   href="/how-it-works"
                   className="text-left px-4 py-3 text-white hover:bg-white/10 rounded-lg font-medium transition-colors"
