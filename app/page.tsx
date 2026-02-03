@@ -1,316 +1,316 @@
 import Header from './components/Header';
 import EmailCapture from './components/EmailCapture';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FFFBEB]">
+    <div className="min-h-screen bg-[#F5EFE7]">
       <Header />
 
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-[#FFFBEB]">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-32 md:py-20 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.unsplash.com/photo-1560707854-fb9a10eeaace?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Mother with baby"
+            fill
+            className="object-cover brightness-75"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+          <div className="absolute inset-0 bg-[#F4B942]/15"></div>
+        </div>
 
-            {/* Left Content */}
-            <div className="relative z-10 animate-fadeInLeft opacity-0">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-[#2C2418] leading-tight animate-fadeInUp opacity-0 animate-delay-200">
-                Nourishing meals for pregnancy & postpartum recovery
-              </h1>
-
-              <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-10 text-[#2C2418]/80 leading-relaxed animate-fadeInUp opacity-0 animate-delay-400">
-                Chef-made meals designed to support healing, energy, and nourishment — so you can focus on yourself and your baby.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 animate-fadeInUp opacity-0 animate-delay-600">
-                <a
-                  href="#join"
-                  className="group inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-base md:text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-[1.02] hover:-translate-y-1 shadow-lg hover:shadow-2xl justify-center"
-                >
-                  <span>Join the Waitlist</span>
-                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </a>
-                <Link
-                  href="/how-it-works"
-                  className="group inline-flex items-center gap-2 bg-white text-[#dd7409] px-8 py-4 rounded-full text-base md:text-lg font-semibold hover:bg-gray-50 transition-all border-2 border-[#dd7409]/20 shadow-md hover:shadow-lg justify-center"
-                >
-                  <span>How it works</span>
-                </Link>
-              </div>
-            </div>
-
-            {/* Right Image */}
-            <div className="relative animate-fadeInRight opacity-0 animate-delay-300">
-              <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#dd7409]/20">
+        {/* Hero Content */}
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-20">
+          {/* Logo */}
+          <div className="mb-8">
+            <div className="inline-block">
+              <div className="relative w-16 h-16 mx-auto mb-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop"
-                  alt="Nourishing postpartum food - warm broth and vegetables"
+                  src="/WhatsApp_Image_2026-01-28_at_02.00.59__1_-removebg-preview.png"
+                  alt="Birth & Brodo Logo"
                   fill
-                  className="object-cover"
-                  priority
+                  className="object-contain"
                 />
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#FCD34D]/30 rounded-full blur-3xl animate-float"></div>
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-[#dd7409]/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+              <p className="text-white/90 text-sm tracking-widest uppercase">Birth & Brodo</p>
             </div>
-
           </div>
+
+          <h1 className="text-5xl md:text-7xl font-serif font-light text-white mb-8 leading-tight">
+            The Fourth, Nourished
+          </h1>
+
+          <a
+            href="#join"
+            className="inline-block bg-[#F4B942] text-[#2C2418] px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#E5AA32] transition-all transform hover:scale-105 shadow-xl"
+          >
+            Join Waitlist
+          </a>
         </div>
 
-      </section>
-
-      {/* The Problem Section */}
-      <section id="about" className="section-padding bg-gradient-to-br from-[#FEF3C7] to-[#FFFBEB] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl animate-fadeInLeft opacity-0 border-4 border-[#FCD34D]/30">
-              <Image
-                src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?q=80&w=2070&auto=format&fit=crop"
-                alt="Mother resting with newborn baby"
-                fill
-                className="object-cover hover:scale-110 transition-transform duration-700"
-              />
-            </div>
-
-            <div className="animate-fadeInRight opacity-0 animate-delay-300 px-4 md:px-0">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-[#dd7409] leading-tight">
-                The postpartum period is physically demanding
-              </h2>
-
-              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-[#2C2418]/80 leading-relaxed">
-                <p className="animate-fadeInUp opacity-0 animate-delay-400">
-                  Healing takes time. Sleep is broken. Decisions feel overwhelming. Yet proper nutrition remains essential for recovery.
-                </p>
-                <p className="font-semibold text-[#2C2418] text-lg md:text-xl animate-fadeInUp opacity-0 animate-delay-500">
-                  Most meal services aren't designed for postpartum recovery.
-                </p>
-                <p className="text-2xl md:text-3xl font-serif text-[#dd7409] pt-2 md:pt-4 animate-fadeInUp opacity-0 animate-delay-600 font-bold">
-                  Birth&Brodo is.
-                </p>
-              </div>
-            </div>
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+          <div className="animate-bounce">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
           </div>
         </div>
       </section>
 
-      {/* Founder Story Section */}
-      <section className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="mb-20 animate-fadeInUp opacity-0">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
-                Why we built this
-              </h2>
-              <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
-                A mission born from real experience
+      {/* Intro Text Section */}
+      <section className="py-20 bg-[#F5EFE7]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-xl md:text-2xl text-[#2C2418]/80 leading-relaxed">
+            Warm, thoughtfully prepared postpartum meals designed to support healing, recovery, and rest delivered with care.
+          </p>
+        </div>
+      </section>
+
+      {/* Three Cards Section - Healing, Recovery, Rest */}
+      <section className="py-16 bg-[#F5EFE7]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Healing Card */}
+            <div className="bg-gradient-to-br from-[#F4B942] to-[#E5AA32] rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-serif font-semibold text-[#2C2418] mb-4">Healing</h3>
+              <p className="text-[#2C2418]/80 leading-relaxed">
+                Nutrient-dense broths and warming meals crafted to support your body's natural recovery process.
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Image */}
-              <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#dd7409]/20 animate-fadeInLeft opacity-0 animate-delay-200">
-                <Image
-                  src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=2128&auto=format&fit=crop"
-                  alt="Mother and baby - the inspiration behind Birth&Brodo"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              {/* Story */}
-              <div className="space-y-6 text-lg text-[#2C2418]/80 leading-relaxed animate-fadeInRight opacity-0 animate-delay-300">
-                <p>
-                  <span className="text-2xl font-serif text-[#dd7409] font-semibold block mb-3">
-                    We know what the postpartum period demands.
-                  </span>
-                  The fourth trimester is a time of profound transformation — physically, emotionally, and mentally. Yet most support systems fall short when it comes to the simple, essential need for nourishing food.
-                </p>
-
-                <p>
-                  Birth&Brodo was created by people who understand postpartum recovery firsthand. We have experienced the sleepless nights, the overwhelming decisions, and the critical importance of proper nutrition during healing.
-                </p>
-
-                <p>
-                  We saw a gap between what new mothers need and what is available. Traditional meal services aren't designed for the unique demands of postpartum recovery. So we decided to build something different — something purpose-built, caring, and truly supportive.
-                </p>
-
-                <p className="font-semibold text-[#dd7409] text-xl pt-4">
-                  Birth&Brodo isn't just a business. It's our way of supporting you through one of life's most demanding journeys.
-                </p>
-              </div>
+            {/* Recovery Card */}
+            <div className="bg-gradient-to-br from-[#F4B942] to-[#E5AA32] rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-serif font-semibold text-[#2C2418] mb-4">Recovery</h3>
+              <p className="text-[#2C2418]/80 leading-relaxed">
+                Meals designed with postpartum nutrition in mind, helping you regain strength and energy.
+              </p>
             </div>
-          </div>
 
-          {/* Thoughtfully Designed Badge */}
-          <div className="bg-gradient-to-br from-[#FCD34D]/40 to-[#fcbe11]/20 rounded-3xl p-8 md:p-16 shadow-xl border-4 border-[#dd7409]/20 animate-scaleIn opacity-0 hover:shadow-2xl transition-all duration-500">
-            <div className="text-center">
-              <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8 rounded-full bg-gradient-to-br from-[#dd7409] to-[#fcbe11] shadow-lg flex items-center justify-center animate-float">
-                <svg className="w-10 h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 className="text-2xl md:text-4xl font-serif font-bold text-[#dd7409] mb-4 md:mb-6">
-                Thoughtfully designed, lovingly prepared.
-              </h3>
-              <p className="text-lg md:text-xl text-[#2C2418]/80 max-w-3xl mx-auto leading-relaxed">
-                Because you shouldn't have to worry about what's for dinner when you're busy bringing new life into the world.
+            {/* Rest Card */}
+            <div className="bg-gradient-to-br from-[#F4B942] to-[#E5AA32] rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all">
+              <h3 className="text-3xl font-serif font-semibold text-[#2C2418] mb-4">Rest</h3>
+              <p className="text-[#2C2418]/80 leading-relaxed">
+                One less thing to worry about. We handle the cooking so you can focus on what matters most.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Navigation Cards / Teasers */}
-      <section className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7]">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Card 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-[#FCD34D]/20 flex flex-col items-center text-center">
-              <h3 className="text-2xl font-serif font-semibold mb-4 text-[#dd7409]">Our Recovery Packs</h3>
-              <p className="text-[#2C2418]/70 mb-6 flex-grow">
-                Explore our thoughtfully curated meal packs designed for every stage of recovery.
-              </p>
-              <Link href="/products" className="text-[#dd7409] font-medium hover:underline flex items-center gap-1">
-                View the Menu <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-              </Link>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-[#FCD34D]/20 flex flex-col items-center text-center">
-              <h3 className="text-2xl font-serif font-semibold mb-4 text-[#dd7409]">See What Others Say</h3>
-              <p className="text-[#2C2418]/70 mb-6 flex-grow">
-                Read stories from mothers who have felt the difference of proper nourishment.
-              </p>
-              <Link href="/testimonials" className="text-[#dd7409] font-medium hover:underline flex items-center gap-1">
-                Read Testimonials <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section id="faq" className="section-padding bg-gradient-to-br from-[#FEF3C7] via-[#FFFBEB] to-[#FEF3C7] overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-16 animate-fadeInUp opacity-0">
-            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-[#dd7409]">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-lg text-[#2C2418]/70 max-w-2xl mx-auto">
-              Everything you need to know
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            {/* FAQ Item 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-100">
-              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
-                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
-                <span>When do you deliver?</span>
-              </h3>
-              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                We plan weekly deliveries based on location.
-              </p>
-            </div>
-
-            {/* FAQ Item 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-200">
-              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
-                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
-                <span>Is this for pregnancy or postpartum?</span>
-              </h3>
-              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Both — meals are designed to support nourishment during pregnancy and recovery after birth.
-              </p>
-            </div>
-
-            {/* FAQ Item 3 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-300">
-              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
-                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
-                <span>Are meals fresh or frozen?</span>
-              </h3>
-              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Meals are prepared fresh and packaged for convenience.
-              </p>
-            </div>
-
-            {/* FAQ Item 4 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-400">
-              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
-                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
-                <span>Can someone order this as a gift?</span>
-              </h3>
-              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Yes — Birth & Brodo makes a meaningful gift for new parents.
-              </p>
-            </div>
-
-            {/* FAQ Item 5 */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#FCD34D]/30 animate-fadeInUp opacity-0 animate-delay-500">
-              <h3 className="text-xl font-serif font-semibold mb-3 text-[#dd7409] flex items-start gap-3">
-                <svg className="w-6 h-6 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
-                <span>Where will you launch first?</span>
-              </h3>
-              <p className="text-[#2C2418]/80 leading-relaxed ml-9">
-                Launch locations will be announced to our waitlist first.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-600">
-            <a
-              href="#join"
-              className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              <span>Join the Waitlist</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      {/* Centered Badge */}
+      <section className="py-16 bg-[#F5EFE7]">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-3 bg-white rounded-full px-8 py-4 shadow-md">
+            <div className="w-12 h-12 rounded-full bg-[#F4B942] flex items-center justify-center">
+              <svg className="w-6 h-6 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-            </a>
+            </div>
+            <span className="text-lg font-medium text-[#2C2418]">Thoughtfully prepared</span>
           </div>
         </div>
       </section>
 
-      {/* Email Capture - Main CTA */}
-      <section id="join" className="section-padding bg-gradient-to-b from-[#dd7409] to-[#c66508] relative overflow-hidden py-24">
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      {/* Mother & Baby Image Section */}
+      <section className="py-20 bg-[#F5EFE7]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-3 gap-12 items-center">
+            {/* Left Text */}
+            <div className="text-center lg:text-right">
+              <div className="mb-6">
+                <div className="w-12 h-12 rounded-full bg-white mx-auto lg:ml-auto lg:mr-0 flex items-center justify-center shadow-md mb-4">
+                  <svg className="w-6 h-6 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-serif font-semibold text-[#2C2418] mb-2">
+                  Warm meals for a warm heart
+                </h3>
+                <p className="text-[#2C2418]/70">
+                  Comfort food that truly comforts
+                </p>
+              </div>
+            </div>
 
-        <div className="max-w-5xl mx-auto relative z-10 px-4 md:px-6">
-          <div className="text-center mb-12 animate-fadeInUp opacity-0">
-            <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-6 text-white">
-              Join the Early Access List
+            {/* Center Image */}
+            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="https://images.unsplash.com/photo-1560707857-b897819e06fb?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Mother and baby"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-[#F4B942]/15"></div>
+            </div>
+
+            {/* Right Text */}
+            <div className="text-center lg:text-left">
+              <div className="mb-6">
+                <div className="w-12 h-12 rounded-full bg-white mx-auto lg:mr-auto lg:ml-0 flex items-center justify-center shadow-md mb-4">
+                  <svg className="w-6 h-6 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-serif font-semibold text-[#2C2418] mb-2">
+                  Delivered when you need it most
+                </h3>
+                <p className="text-[#2C2418]/70">
+                  Fresh, ready to enjoy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How This Works Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            {/* Left - Title */}
+            <div>
+              <h2 className="text-5xl md:text-6xl font-serif font-light text-[#2C2418] leading-tight">
+                How This<br />Works
+              </h2>
+            </div>
+
+            {/* Right - Steps */}
+            <div className="space-y-8">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-[#F4B942] flex items-center justify-center text-[#2C2418] font-bold">
+                    01
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-serif font-semibold text-[#2C2418] mb-2">Join the Waitlist</h3>
+                  <p className="text-[#2C2418]/70 leading-relaxed">
+                    Sign up to be notified when we launch in your area. Early subscribers get priority access.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-[#F4B942] flex items-center justify-center text-[#2C2418] font-bold">
+                    02
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-serif font-semibold text-[#2C2418] mb-2">Receive at Home</h3>
+                  <p className="text-[#2C2418]/70 leading-relaxed">
+                    Fresh, chef-prepared meals delivered to your door on a schedule that works for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Made with Intention Section */}
+      <section className="py-20 bg-[#F5EFE7]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-serif font-light text-[#2C2418] leading-tight mb-4">
+              Made with<br />Intention, Not Trend
             </h2>
-
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Be the first to know when we launch in your area. Early subscribers receive priority access and founding-parent perks.
-            </p>
           </div>
 
-          <div className="max-w-3xl mx-auto animate-fadeInUp opacity-0 animate-delay-300">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            {/* Feature 1 */}
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-white mx-auto flex items-center justify-center shadow-md mb-4">
+                <svg className="w-8 h-8 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-[#2C2418] mb-2">Thoughtful in content, quality ingredients</h3>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-white mx-auto flex items-center justify-center shadow-md mb-4">
+                <svg className="w-8 h-8 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-[#2C2418] mb-2">A focus on nutrient and digestibility</h3>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-white mx-auto flex items-center justify-center shadow-md mb-4">
+                <svg className="w-8 h-8 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-[#2C2418] mb-2">Prepared with care and attention to tradition</h3>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="text-center">
+              <div className="w-16 h-16 rounded-full bg-white mx-auto flex items-center justify-center shadow-md mb-4">
+                <svg className="w-8 h-8 text-[#2C2418]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-[#2C2418] mb-2">Crafted to support emotional and physical wellness</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Care When It's Needed Most Section */}
+      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.pexels.com/photos/31152767/pexels-photo-31152767.jpeg?_gl=1*m1ftua*_ga*MzY2NzQyMzE2LjE3NzAxMDYyODA.*_ga_8JE65Q40S6*czE3NzAxMDYyNzkkbzEkZzEkdDE3NzAxMDY1MDkkajU5JGwwJGgw"
+            alt="Happy baby"
+            fill
+            className="object-cover brightness-75"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+          <div className="absolute inset-0 bg-[#F4B942]/15"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-serif font-light text-white mb-8 leading-tight">
+            Care, When<br />It's Needed Most
+          </h2>
+          <a
+            href="#join"
+            className="inline-block bg-[#F4B942] text-[#2C2418] px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#E5AA32] transition-all transform hover:scale-105 shadow-xl"
+          >
+            Join Waitlist
+          </a>
+          <p className="text-white/90 mt-6 text-sm">
+            Nourishing meals to support you through the fourth trimester and beyond.
+          </p>
+        </div>
+      </section>
+
+      {/* Yellow CTA Section - Be the First to Know */}
+      <section id="join" className="py-24 bg-gradient-to-br from-[#F4B942] to-[#E5AA32] relative overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+          <h2 className="text-5xl md:text-6xl font-serif font-light text-[#2C2418] mb-6 leading-tight">
+            Be the First to<br />Know When We<br />Launch
+          </h2>
+
+          <div className="max-w-2xl mx-auto mt-12">
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
               <EmailCapture />
             </div>
           </div>
 
           {/* Trust badges */}
-          <div className="flex flex-wrap justify-center items-center gap-8 mt-12 text-white/80 text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-8 mt-12 text-[#2C2418]/80 text-sm">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

@@ -2,64 +2,78 @@ import Header from '../components/Header';
 
 export default function HowItWorks() {
     return (
-        <div className="min-h-screen bg-[#FFFBEB]">
+        <div className="min-h-screen bg-[#F5EFE7]">
             <Header />
             <div className="pt-24">
-                <section id="how-it-works" className="section-padding bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] overflow-hidden py-16">
+                <section className="section-padding bg-[#F5EFE7] overflow-hidden py-16">
                     <div className="max-w-5xl mx-auto px-4 md:px-6">
-                        <h2 className="text-4xl md:text-5xl font-serif font-semibold mb-16 text-center text-[#dd7409] animate-fadeInUp opacity-0">
+                        <h2 className="text-5xl md:text-6xl font-serif font-light mb-16 text-center text-[#2C2418] leading-tight">
                             How It Works
                         </h2>
 
-                        <div className="space-y-8">
-                            <div className="flex flex-col md:flex-row gap-8 items-start bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-200 border-2 border-[#FCD34D]/30">
-                                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
-                                    1
+                        <div className="space-y-12 max-w-3xl mx-auto">
+                            <div className="flex gap-6 items-start">
+                                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#F4B942] text-[#2C2418] flex items-center justify-center text-lg font-bold shadow-md">
+                                    01
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
+                                <div className="flex-1 pt-2">
+                                    <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-3 text-[#2C2418]">
                                         Join the Waitlist
                                     </h3>
                                     <p className="text-lg text-[#2C2418]/70 leading-relaxed">
-                                        Tell us your due date and location.
+                                        Sign up to be notified when we launch in your area. Early subscribers get priority access and exclusive launch pricing.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="flex flex-col md:flex-row gap-8 items-start bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInRight opacity-0 animate-delay-400 border-2 border-[#FCD34D]/30">
-                                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
-                                    2
+                            <div className="flex gap-6 items-start">
+                                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#F4B942] text-[#2C2418] flex items-center justify-center text-lg font-bold shadow-md">
+                                    02
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
-                                        We Prepare & Deliver
+                                <div className="flex-1 pt-2">
+                                    <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-3 text-[#2C2418]">
+                                        Choose Your Meals
                                     </h3>
                                     <p className="text-lg text-[#2C2418]/70 leading-relaxed">
-                                        Fresh meals are prepared weekly and delivered to your door.
+                                        Select from our thoughtfully curated meal packs designed specifically for postpartum recovery and nourishment.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="flex flex-col md:flex-row gap-8 items-start bg-gradient-to-r from-white to-[#FEF3C7]/40 rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-500 animate-fadeInLeft opacity-0 animate-delay-600 border-2 border-[#FCD34D]/30">
-                                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#dd7409] to-[#fcbe11] text-white flex items-center justify-center text-2xl font-bold shadow-lg">
-                                    3
+                            <div className="flex gap-6 items-start">
+                                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#F4B942] text-[#2C2418] flex items-center justify-center text-lg font-bold shadow-md">
+                                    03
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="text-2xl font-serif font-semibold mb-2 text-[#dd7409]">
-                                        You Rest & Recover
+                                <div className="flex-1 pt-2">
+                                    <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-3 text-[#2C2418]">
+                                        Receive at Home
                                     </h3>
                                     <p className="text-lg text-[#2C2418]/70 leading-relaxed">
-                                        Heat, eat, and focus on healing and your baby.
+                                        Fresh, chef-prepared meals delivered to your door on a schedule that works for you. No cooking, no stress.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-6 items-start">
+                                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#F4B942] text-[#2C2418] flex items-center justify-center text-lg font-bold shadow-md">
+                                    04
+                                </div>
+                                <div className="flex-1 pt-2">
+                                    <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-3 text-[#2C2418]">
+                                        Rest & Recover
+                                    </h3>
+                                    <p className="text-lg text-[#2C2418]/70 leading-relaxed">
+                                        Heat, eat, and focus on healing and your baby. We take care of the nourishment, you take care of yourself.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* CTA after "How It Works" */}
-                        <div className="text-center mt-16 animate-fadeInUp opacity-0 animate-delay-800">
+                        {/* CTA */}
+                        <div className="text-center mt-16">
                             <a
-                                href="/#join" // Updated to link back to home page anchor
-                                className="inline-flex items-center gap-2 bg-[#dd7409] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#c66508] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                href="/#join"
+                                className="inline-flex items-center gap-2 bg-[#F4B942] text-[#2C2418] px-10 py-4 rounded-full text-lg font-semibold hover:bg-[#E5AA32] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
                             >
                                 <span>Join the Waitlist</span>
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

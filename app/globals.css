@@ -1,16 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFBEB;
+  --background: #F5EFE7;
   --foreground: #2C2418;
-  --warm-yellow: #FEF3C7;
-  --bright-yellow: #FCD34D;
-  --warm-brown: #8b6f47;
+  --warm-beige: #F5EFE7;
+  --warm-yellow: #F4B942;
+  --golden-yellow: #E5AA32;
   --deep-brown: #2C2418;
-  --accent-gold: #fcbe11;
-  --accent-gold-dark: #fdbf14;
-  --button-primary: #dd7409;
-  --button-primary-hover: #c66508;
+  --white: #FFFFFF;
 }
 
 @theme inline {
@@ -212,17 +209,17 @@ h1, h2, h3 {
 
 .animate-shimmer {
   animation: shimmer 2s infinite;
-  background: linear-gradient(to right, transparent 0%, rgba(252, 190, 17, 0.1) 50%, transparent 100%);
+  background: linear-gradient(to right, transparent 0%, rgba(244, 185, 66, 0.1) 50%, transparent 100%);
   background-size: 1000px 100%;
 }
 
 /* Pulse glow */
 @keyframes pulseGlow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(221, 116, 9, 0.3);
+    box-shadow: 0 0 20px rgba(244, 185, 66, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(221, 116, 9, 0.5);
+    box-shadow: 0 0 40px rgba(244, 185, 66, 0.5);
   }
 }
 
