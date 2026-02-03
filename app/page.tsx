@@ -270,7 +270,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.pexels.com/photos/31152767/pexels-photo-31152767.jpeg?_gl=1*m1ftua*_ga*MzY2NzQyMzE2LjE3NzAxMDYyODA.*_ga_8JE65Q40S6*czE3NzAxMDYyNzkkbzEkZzEkdDE3NzAxMDY1MDkkajU5JGwwJGgw"
+            src="https://images.pexels.com/photos/27177332/pexels-photo-27177332.jpeg?_gl=1*10j3ewn*_ga*MzY2NzQyMzE2LjE3NzAxMDYyODA.*_ga_8JE65Q40S6*czE3NzAxMzE3NDIkbzIkZzEkdDE3NzAxMzE3NDMkajU5JGwwJGgw"
             alt="Happy baby"
             fill
             className="object-cover brightness-75"
