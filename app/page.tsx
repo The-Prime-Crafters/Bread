@@ -365,6 +365,9 @@ export default function Home() {
             </div>
 
             <div className="border-t border-white/20 pt-6">
+              <p className="text-sm text-white/80 mb-2">
+                Birth & Brodo is currently launching in select Bay Area locations.
+              </p>
               <p className="text-sm text-white/70">
                 © 2026 Birth&Brodo. All rights reserved.
               </p>

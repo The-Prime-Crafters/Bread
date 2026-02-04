@@ -38,7 +38,7 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3 cursor-pointer">
               <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
-                  src="/WhatsApp_Image_2026-01-28_at_02.00.59__1_-removebg-preview.png"
+                  src="/logo2.jpeg"
                   alt="Birth & Brodo Logo"
                   fill
                   className="object-contain"
