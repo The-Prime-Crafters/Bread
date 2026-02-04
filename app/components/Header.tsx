@@ -38,7 +38,7 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3 cursor-pointer">
               <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
-                  src="/logo2.jpeg"
+                  src="/logo3.jpeg"
                   alt="Birth & Brodo Logo"
                   fill
                   className="object-contain"

@@ -207,6 +207,20 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-[#F4B942] flex items-center justify-center text-[#2C2418] font-bold">
+                    03
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-serif font-semibold text-[#2C2418] mb-2">Heat, Eat & Heal</h3>
+                  <p className="text-[#2C2418]/70 leading-relaxed">
+                    Warm, recovery-focused meals designed to support healing, energy, and milk supply—ready in minutes, no prep required.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
