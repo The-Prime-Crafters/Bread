@@ -124,7 +124,7 @@ export default function EmailCapture() {
           {/* Due Date Field (Optional) */}
           <div>
             <label htmlFor="dueDate" className="block text-sm font-medium text-[#4a3728]/70 mb-2">
-              Baby's Due Date or Birth Date <span className="text-[#4a3728]/50 text-xs">(Optional)</span>
+               Baby’s expected due date <span className="text-[#4a3728]/50 text-xs">(Optional)</span>
             </label>
             <input
               type="date"
